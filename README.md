@@ -42,3 +42,6 @@ It is a secure terminal chat app that is made on `python`. It follows `end to en
 - ### Encryption
 1. [Youtube - Asymmetric Encryption - Simply explained](https://youtu.be/AQDCe585Lnc?si=GUiClSys-Tp538Gt)
 2. [Youtube - How Encryption Works](https://youtu.be/h1qf_tBaXtg?si=wfwHtqWXe5N1esV9)
+
+- ### PyCryptodome
+1. [PyCryptodome official documentation](https://pycryptodome.readthedocs.io/en/latest/src/public_key/rsa.html)
