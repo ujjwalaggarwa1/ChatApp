@@ -3,7 +3,8 @@
 import asyncio
 import json
 import sys
-from main import connectionManager, Encryption
+from networks import connectionManager
+from encryptions import Encryption
 
 async def send_text(writer, encryption_instance, common_key, text: str):
     ciphertext, nonce, tag = await encryption_instance.encrypt_aes(common_key, text.encode('utf-8'))

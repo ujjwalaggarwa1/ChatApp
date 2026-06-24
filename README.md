@@ -21,6 +21,7 @@ The [testing file](test3.py) was made by ai because i got tired
 2. textual
 
 - run :- `pip install -r requirements.txt`
+- note :- The file was made in virtual environment and it is advised to use one
 
 >## Learnt Values
 - Sockets Library
@@ -61,3 +62,7 @@ The [testing file](test3.py) was made by ai because i got tired
 - ### PyCryptodome
 1. [PyCryptodome official documentation](https://pycryptodome.readthedocs.io/en/latest/src/public_key/rsa.html)
 2. [Youtube - PyCryptodome Encryption Tutorial (RSA + OAEP Explained)](https://youtu.be/RUKSXz7Ixsc?si=Rj6Iv0w753FlV0hz)
+
+- ### Textual
+1. [Youtube - Building UIs in the Terminal With Python Textual: Your First TUI, Text Widgets & TCSS](https://youtu.be/dpJrM2_NOT8?si=EX3Mxg6mfY9ElcNx)
+2. 
