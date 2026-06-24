@@ -4,7 +4,7 @@ It is a secure terminal chat app that is made on `python`. It follows `end to en
 
 > Quick note: I made this project myself and `did not` `used ai` except for the idea of the project and some minor explanation of module functions
 
-The [testing file](test3.py) was made by ai because i go tired
+The [testing file](test3.py) was made by ai because i got tired
 
 ---
 ---
@@ -20,6 +20,8 @@ The [testing file](test3.py) was made by ai because i go tired
 1. pycryptodome
 2. textual
 
+- run :- `pip install -r requirements.txt`
+
 >## Learnt Values
 - Sockets Library
 - Encryption basics
@@ -31,6 +33,7 @@ The [testing file](test3.py) was made by ai because i go tired
 2. socket library
 3. RSA and AES
 4. Diffie-Hellman Key Exchange
+5. Textual library
 
 >## References
 
