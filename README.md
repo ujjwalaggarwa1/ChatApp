@@ -65,4 +65,4 @@ The [testing file](test3.py) was made by ai because i got tired
 
 - ### Textual
 1. [Youtube - Building UIs in the Terminal With Python Textual: Your First TUI, Text Widgets & TCSS](https://youtu.be/dpJrM2_NOT8?si=EX3Mxg6mfY9ElcNx)
-2. 
+2. [Textual official Documentation](https://textual.textualize.io/api/)
