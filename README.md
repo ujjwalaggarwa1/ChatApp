@@ -2,9 +2,11 @@
 
 It is a secure terminal chat app that is made on `python`. It follows `end to end encryption` to let someone chat securely
 
-> Quick note: I made this project myself and `did not` `used ai` except for the idea of the project and some minor explanation of module functions
+> Quick note: `I made this project myself` and used AI only for the idea of the project and some minor explanation of module functions
 
-The [testing file](test3.py) was made by ai because i got tired
+- documented use of AI
+    - The [testing file](test3.py) was made by AI because i got tired
+    - It was used for debugging when it was time for ui and backend integration
 
 ---
 ---
@@ -15,6 +17,7 @@ The [testing file](test3.py) was made by ai because i got tired
 4. ~~In memory cache system to automatically resend undelivered messages~~ : 
     - While researching on how other applications manage cache, i got to know that tcp will deliver the messages and does the purpose of this feature automatically so the `idea is dropped`
 5. Good terminal UI
+6. A logging system for debugging the code (i just used the logger from of my previous projects)
 
 >## External Libraries
 1. pycryptodome
@@ -33,8 +36,7 @@ The [testing file](test3.py) was made by ai because i got tired
 1. Python
 2. socket library
 3. RSA and AES
-4. Diffie-Hellman Key Exchange
-5. Textual library
+4. Textual library
 
 >## References
 
@@ -65,4 +67,4 @@ The [testing file](test3.py) was made by ai because i got tired
 
 - ### Textual
 1. [Youtube - Building UIs in the Terminal With Python Textual: Your First TUI, Text Widgets & TCSS](https://youtu.be/dpJrM2_NOT8?si=EX3Mxg6mfY9ElcNx)
-2. 
+2. [Textual official Documentation](https://textual.textualize.io/api/)

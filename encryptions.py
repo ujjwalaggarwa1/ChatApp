@@ -1,8 +1,12 @@
 import asyncio
-from Crypto.PublicKey import RSA
-from Crypto.Cipher import AES, PKCS1_OAEP
-from Crypto.Random import get_random_bytes
 
+try:
+    from Crypto.PublicKey import RSA
+    from Crypto.Cipher import AES, PKCS1_OAEP
+    from Crypto.Random import get_random_bytes
+
+except:
+    print("Unable to load modules, run: pip install -r requirements.txt")
 
 class Encryption:
     def __init__(self, key_size=2048, key_size_bytes=32) -> None:

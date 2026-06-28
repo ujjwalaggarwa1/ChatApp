@@ -2,6 +2,11 @@ import socket
 import asyncio
 import time
 import json
+import Logger
+
+Logger.setup_logging(backup_count=1)
+logger = Logger.get_module_logger("Networks")
+
 '''
 json data send example:
 
@@ -45,6 +50,10 @@ class connectionManager:
         self.buffer_size:int = buffer_size
         self.availability = {}
         
+        self.pending_handshake = None
+        self.handshake_signal = asyncio.Event()
+        self.handshake_approved = False
+        
         
     # all the functions are clear by their name, still added some documentary
     
@@ -70,15 +79,16 @@ class connectionManager:
         
         loop = asyncio.get_running_loop()
         
-        
+        logger.info("Starting Broadcast")
         try:
             while self.running:
                 # '255.255.255.255' marks the whole local network subnet
                 await loop.sock_sendto(sock, j_msg.encode(), ('255.255.255.255', self.broad_port))
                 await asyncio.sleep(self.broad_frequency)
-        except Exception:
-            pass
+        except Exception as e:
+            logger.exception(f"Exception occurred\n\t{e}")
         finally:
+            logger.info("shutting broadcast")
             sock.close()
     
     async def _udp_listener(self):
@@ -89,7 +99,8 @@ class connectionManager:
         sock.setblocking(False)
         
         loop = asyncio.get_running_loop()
-        
+
+        logger.info('starting listener')
         try:
             while self.running:
                 data, addr = await loop.sock_recvfrom(sock, self.buffer_size)
@@ -111,13 +122,15 @@ class connectionManager:
                         "peer_name" : packet.get("name"),
                         "device" : packet.get("device"),
                         "peer_tcp_port" : packet.get("tcp_port"),
-                        "last_seen" : current_time
+                        "last_seen" : current_time,
+                        "safe_id": str(peer_id).replace('.', '').replace(':', '_').replace('(','').replace(')','').replace("'","").replace('"', '').replace(" ","").replace(",", "")
                     }
                     
                     # asyncio.create_task(connect_to_peer(peer_ip, peer_tcp_port))
-        except Exception:
-            pass
+        except Exception as e:
+            logger.exception(f"Exception occurred\n\t{e}")
         finally:
+            logger.info('Closing listener')
             sock.close()
     
     async def _bg_connection_clearer(self):
@@ -136,13 +149,29 @@ class connectionManager:
                 self.availability.pop(peer_id)
     
     async def _receive_tcp(self, reader, writer):
+        logger.info('TCP connection request received')
         
         peer = writer.get_extra_info('peername')
+        peer_ip = peer[0]
+        
+        peer_profile = None
+        for p_id, profile in self.availability.items():
+            if p_id[0] == peer_ip:
+                peer_profile = profile
+                break
+                
+        peer_name = peer_profile.get("peer_name", "Unknown Node") if peer_profile else "Unknown Node"
+
         try:
-            # this approval method is meant to be changed later with ui integration
-            approval = await asyncio.to_thread(input, f"Approve encrypted channel session with {peer}? (y/n): ")
-            
-            if approval.strip().lower() != 'y':
+            self.handshake_signal.clear()
+            self.pending_handshake = {"name": peer_name, "ip": peer_ip}
+            self.handshake_approved = False
+
+            await self.handshake_signal.wait()
+
+            if not self.handshake_approved:
+                writer.close()
+                await writer.wait_closed()
                 return
             
             common_key = await self.encry.generate_common_key()
@@ -170,13 +199,17 @@ class connectionManager:
             # make the continuous chat
             await self._continuous_chat(reader, writer, common_key)
             
-        except Exception:
-            pass
+        except Exception as e:
+            logger.exception(f"Exception occurred\n\t{e}")
         finally:
+            logger.info("Closing receive_tcp")
             writer.close()
             await writer.wait_closed()
     
     async def _initiate_tcp(self, peer_ip, peer_port, peer_packet):
+        
+        logger.info("initiating tcp request")
+        
         try:
             reader, writer = await asyncio.open_connection(peer_ip, peer_port)
             
@@ -199,12 +232,14 @@ class connectionManager:
                 
                 await self._continuous_chat(reader, writer, common_key)
                 
-        except Exception:
+        except Exception as e:
+            logger.exception(f"Exception occurred\n\t{e}")
             return 'connection denied'
 
     async def _continuous_chat(self, reader, writer, common_key):
         '''The Continuous talk loop holding the open line session'''
         
+        logger.info("backend chat instance made")
         peer = writer.get_extra_info('peername')
         
         try:
@@ -226,9 +261,10 @@ class connectionManager:
                     if plain_bytes:
                         print(f"\n[{peer}]: {plain_bytes.decode('utf-8')}")
                         
-        except ConnectionError:
-            pass
+        except ConnectionError as e:
+            logger.exception(f"Exception occurred\n\t{e}")
         finally:
+            logger.info("backend chat instance CLOSED")
             writer.close()
             await writer.wait_closed()
     
@@ -247,6 +283,7 @@ class connectionManager:
         server = await asyncio.start_server(self._receive_tcp, self.ip, port, limit=self.buffer_size)
         self.tcp_port = server.sockets[0].getsockname()[1]
         
+        logger.info("Starting the backend server.")
         
         try:
             await asyncio.gather(
@@ -256,8 +293,10 @@ class connectionManager:
                 self._bg_connection_clearer()
             )
         except asyncio.CancelledError:
+            logger.info("[Shutdown]: Background engine tasks canceled.")
             print("[Shutdown]: Background engine tasks canceled.")
         except Exception as e:
+            logger.exception(f"Exception occurred\n\t{e}")
             print(f"[Runtime Error]: Server loop encountered an exception: {e}")
         finally:
             self.running = False

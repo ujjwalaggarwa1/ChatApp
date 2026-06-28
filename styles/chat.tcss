@@ -1,0 +1,147 @@
+/* --- Main Screen Geometry --- */
+
+ChatScreen {
+    background: #000110;
+}
+
+Horizontal {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Left Sidebar Layout & Panes --- */
+
+#sidebar {
+    width: 32;
+    height: 100%;
+    background: #0f101d;
+    border-right: solid #282841;
+    border: none;
+    padding: 0;
+    width: 32;
+    height: 100%;
+}
+
+
+#Available, #Connected {
+    height: 1fr;
+    width: 100%; 
+    border: none;
+    padding: 1 2; 
+    background: transparent;
+}
+
+#Available {
+    border-bottom: dashed #282841;
+}
+
+/* Sidebar panel headers */
+#sidebar Static {
+    margin-bottom: 1;
+    text-align: center;
+    width: 100%;
+}
+
+/* The scroll view layouts containing your dynamically mounted buttons */
+#peopleList, #connectedList {
+    width: 100%;
+    height: 1fr;
+}
+
+/* Custom styling for your active session/peer buttons inside the lists */
+#sidebar Button {
+    width: 100%;
+    margin-bottom: 1;
+    border: none;
+    height: 3;
+    background: #1b1c2d;
+    color: #e5e9f0;
+}
+
+#sidebar Button:hover {
+    background: #bf616a;
+}
+
+/* --- Right Side Workspace Area --- */
+
+#main_viewport {
+    width: 1fr;
+    height: 100%;
+    background: #000110;
+    /* FIXED: Reset global Vertical properties for the main panel too */
+    border: none;
+    padding: 0;
+}
+
+/* The centered text panel displayed before any chat session opens */
+#empty_view {
+    width: 100%;
+    height: 100%;
+    content-align: center middle;
+    text-align: center;
+    color: #4c566a;
+    padding: 0 4;
+}
+
+/* --- Active Conversation Containers --- */
+
+ConversationPane {
+    width: 100%;
+    height: 100%;
+}
+
+ConversationPane > Vertical {
+    width: 100%;
+    height: 100%;
+    padding: 1 2;
+    /* FIXED: Reset global rules for the inner chat container */
+    border: none;
+}
+
+/* Scrollable message container window */
+ConversationPane RichLog {
+    width: 100%;
+    height: 1fr;
+    background: #070814;
+    border: tall #282841;
+    margin-bottom: 1;
+}
+
+/* Message text inputs */
+ConversationPane Input {
+    width: 100%;
+    height: 3;
+    background: #1b1c2d;
+    border: tall #444444;
+}
+
+ConversationPane Input:focus {
+    border: tall #bf616a;
+}
+
+
+
+#main_viewport {
+    width: 1fr;
+    height: 100%;
+    background: #000110;
+    border: none;
+    padding: 0;
+    align: right bottom; 
+}
+
+#notification_zone {
+    width: 42;
+    height: auto;
+    background: #0f101d;
+    border: tall #bf616a;
+    padding: 1 2;
+    margin-right: 4;
+    margin-bottom: 2;
+    display: none; 
+}
+
+/* Keeps the pop-up invisible until an event adds the class */
+#notification_zone.visible {
+    display: block;
+}

@@ -1,0 +1,27 @@
+SetupScreen {
+    align: center middle;
+    background: #000110;
+}
+
+Vertical {
+    width: 55;
+    height: auto;
+    border: solid #282841;
+    padding: 2 4;
+    background: #0f101d;
+}
+
+Static {
+    margin-bottom: 2;
+    text-align: center;
+}
+
+Input {
+    background: #1b1c2d;
+    border: tall #444444;
+}
+
+Input:focus {
+    border: tall #bf616a;
+}
+
