@@ -53,6 +53,10 @@ class connectionManager:
         self.pending_handshake = None
         self.handshake_signal = asyncio.Event()
         self.handshake_approved = False
+        self.active_sessions = {}
+        self.on_session_established = None
+        self.on_session_closed = None
+        self.on_message_received = None
         
         
     # all the functions are clear by their name, still added some documentary
@@ -153,18 +157,26 @@ class connectionManager:
         
         peer = writer.get_extra_info('peername')
         peer_ip = peer[0]
+        peer_tcp_port = None
+        peer_name = "Unknown Node"
         
-        peer_profile = None
-        for p_id, profile in self.availability.items():
-            if p_id[0] == peer_ip:
-                peer_profile = profile
-                break
-                
-        peer_name = peer_profile.get("peer_name", "Unknown Node") if peer_profile else "Unknown Node"
-
         try:
+            # Read identity & public key packet first
+            raw_packet = await reader.readline()
+            if not raw_packet:
+                writer.close()
+                await writer.wait_closed()
+                return
+            
+            key_packet = json.loads(raw_packet.decode('utf-8').strip())
+            peer_public_key = key_packet.get("public_key")
+            peer_name = key_packet.get("name", "Unknown Node")
+            peer_tcp_port = key_packet.get("tcp_port")
+            
+            peer_id = (peer_ip, peer_tcp_port) if peer_tcp_port else peer
+            
             self.handshake_signal.clear()
-            self.pending_handshake = {"name": peer_name, "ip": peer_ip}
+            self.pending_handshake = {"name": peer_name, "ip": peer_ip, "port": peer_tcp_port}
             self.handshake_approved = False
 
             await self.handshake_signal.wait()
@@ -176,16 +188,8 @@ class connectionManager:
             
             common_key = await self.encry.generate_common_key()
             
-            raw_packet = await reader.readline()
-            if not raw_packet:
-                return
-            
-            key_packet = json.loads(raw_packet.decode('utf-8').strip())
-            peer_public_key = key_packet.get("public_key")
-            
             # Encrypt common key with other person's public key
             encrypted_common = await self.encry.encrypt_rsa(peer_public_key, common_key)
-            
             
             data_first_tcp_link = {
                 "connect_request": 1,
@@ -196,31 +200,44 @@ class connectionManager:
             writer.write(payload.encode('utf-8'))
             await writer.drain()
             
+            # Register the session
+            self.active_sessions[peer_id] = {
+                "writer": writer,
+                "common_key": common_key,
+                "peer_name": peer_name
+            }
+            if self.on_session_established:
+                self.on_session_established(peer_ip, peer_tcp_port or peer[1], peer_name)
+            
             # make the continuous chat
-            await self._continuous_chat(reader, writer, common_key)
+            await self._continuous_chat(reader, writer, common_key, peer_tcp_port or peer[1])
             
         except Exception as e:
             logger.exception(f"Exception occurred\n\t{e}")
         finally:
             logger.info("Closing receive_tcp")
+            peer_id = (peer_ip, peer_tcp_port) if 'peer_tcp_port' in locals() and peer_tcp_port else peer
+            self.active_sessions.pop(peer_id, None)
+            if self.on_session_closed:
+                self.on_session_closed(peer_ip, peer_tcp_port or peer[1])
             writer.close()
             await writer.wait_closed()
     
     async def _initiate_tcp(self, peer_ip, peer_port, peer_packet):
-        
         logger.info("initiating tcp request")
-        
         try:
             reader, writer = await asyncio.open_connection(peer_ip, peer_port)
             
             pub_key_packet = {
-                "public_key": self.encry.public_key
+                "public_key": self.encry.public_key,
+                "name": self.name,
+                "tcp_port": self.tcp_port
             }
             payload = json.dumps(pub_key_packet) + "\n"
             writer.write(payload.encode('utf-8'))
             await writer.drain()
             
-            # recives the common key if connection was successful
+            # receives the common key if connection was successful
             raw_res = await reader.readline()
             if not raw_res:
                 return 'connection denied'
@@ -230,17 +247,38 @@ class connectionManager:
                 raw_common_key = bytes.fromhex(response.get("common_key"))
                 common_key = await self.encry.decrypt_rsa(self.encry.private_key, raw_common_key)
                 
-                await self._continuous_chat(reader, writer, common_key)
+                # Fetch peer_name from self.availability:
+                peer_profile = self.availability.get((peer_ip, peer_port))
+                peer_name = peer_profile.get("peer_name", "Unknown Node") if peer_profile else "Unknown Node"
                 
+                # Register the session
+                self.active_sessions[(peer_ip, peer_port)] = {
+                    "writer": writer,
+                    "common_key": common_key,
+                    "peer_name": peer_name
+                }
+                if self.on_session_established:
+                    self.on_session_established(peer_ip, peer_port, peer_name)
+                
+                try:
+                    await self._continuous_chat(reader, writer, common_key, peer_port)
+                finally:
+                    self.active_sessions.pop((peer_ip, peer_port), None)
+                    if self.on_session_closed:
+                        self.on_session_closed(peer_ip, peer_port)
+            else:
+                return 'connection denied'
         except Exception as e:
             logger.exception(f"Exception occurred\n\t{e}")
             return 'connection denied'
 
-    async def _continuous_chat(self, reader, writer, common_key):
+    async def _continuous_chat(self, reader, writer, common_key, peer_tcp_port=None):
         '''The Continuous talk loop holding the open line session'''
         
         logger.info("backend chat instance made")
         peer = writer.get_extra_info('peername')
+        peer_ip = peer[0]
+        peer_port = peer_tcp_port if peer_tcp_port is not None else peer[1]
         
         try:
             while self.running:
@@ -259,7 +297,11 @@ class connectionManager:
                     # Decrypting
                     plain_bytes = await self.encry.decrypt_aes(common_key, ciphertext, nonce, tag)
                     if plain_bytes:
-                        print(f"\n[{peer}]: {plain_bytes.decode('utf-8')}")
+                        text = plain_bytes.decode('utf-8')
+                        if self.on_message_received:
+                            self.on_message_received(peer_ip, peer_port, text)
+                        else:
+                            print(f"\n[{peer}]: {text}")
                         
         except ConnectionError as e:
             logger.exception(f"Exception occurred\n\t{e}")
@@ -268,6 +310,32 @@ class connectionManager:
             writer.close()
             await writer.wait_closed()
     
+    async def send_message(self, peer_ip: str, peer_port: int, text: str) -> bool:
+        '''Encrypts and sends a secure message to a peer'''
+        session = self.active_sessions.get((peer_ip, peer_port))
+        if not session:
+            logger.warning(f"No active session for {(peer_ip, peer_port)}")
+            return False
+        
+        writer = session["writer"]
+        common_key = session["common_key"]
+        
+        try:
+            ciphertext, nonce, tag = await self.encry.encrypt_aes(common_key, text.encode('utf-8'))
+            packet = {
+                "connect_request": 1,
+                "msg": ciphertext.hex(),
+                "nonce": nonce.hex(),
+                "tag": tag.hex()
+            }
+            payload = json.dumps(packet) + "\n"
+            writer.write(payload.encode('utf-8'))
+            await writer.drain()
+            return True
+        except Exception as e:
+            logger.exception(f"Failed to send message to {(peer_ip, peer_port)}: {e}")
+            return False
+
     async def connection(self, sock_port:int=0):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.bind((self.ip, sock_port))

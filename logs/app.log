@@ -1,0 +1,33 @@
+2026-06-29 23:48:35,078 | INFO     | Networks | line:354 | Starting the backend server.
+2026-06-29 23:48:35,079 | INFO     | Networks | line:86 | Starting Broadcast
+2026-06-29 23:48:35,081 | INFO     | Networks | line:107 | starting listener
+2026-06-29 23:48:53,768 | INFO     | Networks | line:354 | Starting the backend server.
+2026-06-29 23:48:53,769 | INFO     | Networks | line:86 | Starting Broadcast
+2026-06-29 23:48:53,769 | INFO     | Networks | line:107 | starting listener
+2026-06-29 23:49:03,616 | INFO     | Networks | line:227 | initiating tcp request
+2026-06-29 23:49:03,617 | INFO     | Networks | line:156 | TCP connection request received
+2026-06-29 23:49:13,580 | INFO     | Networks | line:227 | initiating tcp request
+2026-06-29 23:49:13,582 | INFO     | Networks | line:156 | TCP connection request received
+2026-06-29 23:49:44,747 | INFO     | Networks | line:227 | initiating tcp request
+2026-06-29 23:49:44,748 | INFO     | Networks | line:156 | TCP connection request received
+2026-06-29 23:49:48,523 | INFO     | Networks | line:227 | initiating tcp request
+2026-06-29 23:49:48,525 | INFO     | Networks | line:156 | TCP connection request received
+2026-06-29 23:49:56,120 | INFO     | Networks | line:227 | initiating tcp request
+2026-06-29 23:49:56,121 | INFO     | Networks | line:156 | TCP connection request received
+2026-06-29 23:49:58,111 | INFO     | Networks | line:227 | initiating tcp request
+2026-06-29 23:49:58,112 | INFO     | Networks | line:156 | TCP connection request received
+2026-06-29 23:49:59,879 | INFO     | Networks | line:227 | initiating tcp request
+2026-06-29 23:49:59,880 | INFO     | Networks | line:156 | TCP connection request received
+2026-06-29 23:50:09,994 | INFO     | Networks | line:95 | shutting broadcast
+2026-06-29 23:50:09,994 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-06-29 23:50:09,995 | INFO     | Networks | line:137 | Closing listener
+2026-06-29 23:50:09,995 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-06-29 23:50:09,995 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-06-29 23:50:09,995 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-06-29 23:50:09,995 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-06-29 23:50:09,996 | INFO     | Networks | line:364 | [Shutdown]: Background engine tasks canceled.
+2026-06-29 23:50:13,283 | INFO     | Networks | line:95 | shutting broadcast
+2026-06-29 23:50:13,283 | INFO     | Networks | line:137 | Closing listener
+2026-06-29 23:50:13,283 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-06-29 23:50:13,283 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-06-29 23:50:13,284 | INFO     | Networks | line:364 | [Shutdown]: Background engine tasks canceled.

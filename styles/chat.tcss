@@ -2,6 +2,7 @@
 
 ChatScreen {
     background: #000110;
+    layers: main notifications; /* Sets up the composition overlay system */
 }
 
 Horizontal {
@@ -16,12 +17,8 @@ Horizontal {
     height: 100%;
     background: #0f101d;
     border-right: solid #282841;
-    border: none;
     padding: 0;
-    width: 32;
-    height: 100%;
 }
-
 
 #Available, #Connected {
     height: 1fr;
@@ -68,9 +65,9 @@ Horizontal {
     width: 1fr;
     height: 100%;
     background: #000110;
-    /* FIXED: Reset global Vertical properties for the main panel too */
     border: none;
     padding: 0;
+    position: relative; 
 }
 
 /* The centered text panel displayed before any chat session opens */
@@ -94,7 +91,6 @@ ConversationPane > Vertical {
     width: 100%;
     height: 100%;
     padding: 1 2;
-    /* FIXED: Reset global rules for the inner chat container */
     border: none;
 }
 
@@ -119,29 +115,37 @@ ConversationPane Input:focus {
     border: tall #bf616a;
 }
 
-
-
-#main_viewport {
-    width: 1fr;
-    height: 100%;
-    background: #000110;
-    border: none;
-    padding: 0;
-    align: right bottom; 
-}
+/* --- Notification System --- */
 
 #notification_zone {
+    layer: notifications;
+    position: absolute;
+    offset-x: 100%;
+    offset-y: 100%;
+    margin-left: -46; /* (Box width 42) + (4 units padding from right side boundary) */
+    margin-top: -8;   /* (Box height approx 6) + (2 units padding from bottom edge) */
+    
     width: 42;
     height: auto;
     background: #0f101d;
     border: tall #bf616a;
     padding: 1 2;
-    margin-right: 4;
-    margin-bottom: 2;
-    display: none; 
+    display: none;
 }
 
 /* Keeps the pop-up invisible until an event adds the class */
 #notification_zone.visible {
     display: block;
+}
+
+#notification_actions {
+    margin-top: 1;
+    height: 3;
+    width: 100%;
+}
+
+#notification_actions Button {
+    width: 1fr;
+    margin: 0 1;
+    height: 3;
 }

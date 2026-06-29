@@ -50,6 +50,12 @@ class MainApp(App[None]): #type:ignore
         Starts the backend processes
         '''
         self.networkEngine = connectionManager(nodeUser, self.crypticEngine)
+        
+        chat_screen = self.get_screen("chat")
+        self.networkEngine.on_session_established = chat_screen.handle_session_established
+        self.networkEngine.on_session_closed = chat_screen.handle_session_closed
+        self.networkEngine.on_message_received = chat_screen.handle_message_received
+        
         asyncio.create_task(self.networkEngine.start_server())
 
 
@@ -100,9 +106,11 @@ class SetupScreen(Screen[None]): #type:ignore
 class ConversationPane(Widget):
     """An independent container holding the history and input for a single chat."""
     
-    def __init__(self, peer_name: str, **kwargs):
+    def __init__(self, peer_name: str, peer_ip: str, peer_port: int, **kwargs):
         super().__init__(**kwargs)
         self.peer_name = peer_name
+        self.peer_ip = peer_ip
+        self.peer_port = peer_port
 
     def compose(self) -> ComposeResult:
         with Vertical():
@@ -152,17 +160,33 @@ class ChatScreen(Screen[None]): #type:ignore
 
     def establish_session(self, peer_name: str, peer_id: str) -> None:
         """this is called when a handshake succeeds to initialize the private chat panel."""
-        
         switcher = self.query_one("#chat_switcher", ContentSwitcher)
         active_container = self.query_one("#connectedList", VerticalScroll) 
         
-        safe_id = f"peer_{str(peer_id).replace('.', '').replace(':', '_').replace('(','').replace(')','').replace("'","").replace('"', '').replace(" ","").replace(",", "")}"
+        safe_id = f"peer_{str(peer_id).replace('.', '').replace(':', '_')}"
         
-        new_pane = ConversationPane(peer_name=peer_name, id=safe_id)
+        # Check if already established
+        try:
+            self.query_one(f"#{safe_id}", ConversationPane)
+            return
+        except Exception:
+            pass
+            
+        if ":" in peer_id:
+            peer_ip, peer_port_str = peer_id.split(":")
+            peer_port = int(peer_port_str)
+        else:
+            peer_ip = peer_id
+            peer_port = 0
+            
+        new_pane = ConversationPane(peer_name=peer_name, peer_ip=peer_ip, peer_port=peer_port, id=safe_id)
         switcher.mount(new_pane)
         
         sidebar_btn = Button(f"{peer_name}", id=f"btn_{safe_id}")
         active_container.mount(sidebar_btn)
+        
+        # Automatically switch to the new session
+        switcher.current = safe_id
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         button_id = event.button.id
@@ -175,24 +199,37 @@ class ChatScreen(Screen[None]): #type:ignore
             target_pane_id = button_id.replace("btn_", "")
             self.query_one("#chat_switcher", ContentSwitcher).current = target_pane_id
             
+        elif button_id.startswith("avail_"):
+            # Clicked on an available peer, initiate connection
+            target_peer = None
+            for p_id, profile in engine.availability.items():
+                if f"avail_{profile.get('safe_id')}" == button_id:
+                    target_peer = (p_id, profile)
+                    break
+            if target_peer:
+                peer_id, profile = target_peer
+                peer_ip, peer_port = peer_id
+                peer_name = profile.get("peer_name", "Unknown")
+                logger.info(f"Initiating connection handshake to {peer_name} ({peer_ip}:{peer_port})")
+                asyncio.create_task(engine._initiate_tcp(peer_ip, peer_port, {}))
+            
         current_handshake = getattr(engine, "pending_handshake", None)
 
-        
         if button_id == "btn_accept_req":
             if current_handshake:
                 peer_name = current_handshake.get("name", "Unknown Node")
                 peer_ip = current_handshake.get("ip", "")
+                peer_port = current_handshake.get("port")
                 
                 engine.handshake_approved = True
                 engine.handshake_signal.set() 
                 
-                self.establish_session(peer_name, peer_ip)
-            
+                peer_id_str = f"{peer_ip}:{peer_port}" if peer_port else peer_ip
+                self.establish_session(peer_name, peer_id_str)
             
             self.query_one("#notification_zone").remove_class("visible")
             self.has_active_popup = False
 
-        
         elif button_id == "btn_decline_req":
             if current_handshake:
                 engine.handshake_approved = False
@@ -200,6 +237,77 @@ class ChatScreen(Screen[None]): #type:ignore
             
             self.query_one("#notification_zone").remove_class("visible")
             self.has_active_popup = False
+
+    async def on_input_submitted(self, event: Input.Submitted) -> None:
+        input_widget = event.input
+        input_id = input_widget.id
+        
+        if input_id and input_id.startswith("input_peer_"):
+            message = event.value.strip()
+            if not message:
+                return
+                
+            input_widget.value = ""
+            
+            # Find the ancestor ConversationPane
+            pane = input_widget.parent
+            while pane and not isinstance(pane, ConversationPane):
+                pane = pane.parent
+                
+            if pane and self.app.networkEngine:
+                # Send message asynchronously
+                success = await self.app.networkEngine.send_message(pane.peer_ip, pane.peer_port, message)
+                
+                # Write to local UI log
+                log_widget = pane.query_one(f"#log_{pane.id}", RichLog)
+                if success:
+                    log_widget.write(f"[bold green]You[/]: {message}")
+                else:
+                    log_widget.write(f"[bold red]System: Failed to send message to {pane.peer_name}[/]")
+
+    def handle_session_established(self, peer_ip: str, peer_port: int, peer_name: str) -> None:
+        """Triggered from backend when a connection establishes."""
+        peer_id = f"{peer_ip}:{peer_port}"
+        self.establish_session(peer_name, peer_id)
+
+    def handle_session_closed(self, peer_ip: str, peer_port: int) -> None:
+        """Triggered from backend when a connection is closed."""
+        peer_id = f"{peer_ip}:{peer_port}"
+        safe_id = f"peer_{str(peer_id).replace('.', '').replace(':', '_')}"
+        
+        # Remove button
+        try:
+            btn = self.query_one(f"#btn_{safe_id}")
+            btn.remove()
+        except Exception:
+            pass
+            
+        # Remove pane
+        try:
+            pane = self.query_one(f"#{safe_id}")
+            switcher = self.query_one("#chat_switcher", ContentSwitcher)
+            if switcher.current == safe_id:
+                switcher.current = "empty_view"
+            pane.remove()
+        except Exception:
+            pass
+
+    def handle_message_received(self, peer_ip: str, peer_port: int, text: str) -> None:
+        """Triggered from backend when a message is decrypted."""
+        peer_id = f"{peer_ip}:{peer_port}"
+        safe_id = f"peer_{str(peer_id).replace('.', '').replace(':', '_')}"
+        
+        try:
+            log_widget = self.query_one(f"#log_{safe_id}", RichLog)
+            peer_name = "Unknown"
+            if self.app.networkEngine:
+                session = self.app.networkEngine.active_sessions.get((peer_ip, peer_port))
+                if session:
+                    peer_name = session.get("peer_name", "Unknown")
+            
+            log_widget.write(f"[bold cyan]{peer_name}[/]: {text}")
+        except Exception as e:
+            logger.exception(f"Error handling message received: {e}")
 
     def on_mount(self) -> None:
         self.set_interval(1.0, self.refresh_page)
@@ -227,7 +335,6 @@ class ChatScreen(Screen[None]): #type:ignore
             zone.add_class("visible")
             self.has_active_popup = True  # Lock the UI popup open
 
-        
         existing_buttons = {btn.id for btn in container.query(Button)}
         current_peer_ids = set()
 
@@ -237,7 +344,7 @@ class ChatScreen(Screen[None]): #type:ignore
             if not safe_id_str:
                 continue
                 
-            safe_btn_id = f"d{safe_id_str}"
+            safe_btn_id = f"avail_{safe_id_str}"
             current_peer_ids.add(safe_btn_id)
 
             if safe_btn_id not in existing_buttons:
@@ -246,7 +353,7 @@ class ChatScreen(Screen[None]): #type:ignore
                 container.mount(new_btn)
 
         for btn in container.query(Button):
-            if btn.id and btn.id.startswith("d") and btn.id not in current_peer_ids:
+            if btn.id and btn.id.startswith("avail_") and btn.id not in current_peer_ids:
                 btn.remove()
 
 

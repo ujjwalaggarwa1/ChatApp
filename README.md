@@ -31,6 +31,7 @@ It is a secure terminal chat app that is made on `python`. It follows `end to en
 - Encryption basics
 - Asynchronous Scripts
 - Network Protocols and working
+- Textual Library
 
 >## Techstack
 1. Python

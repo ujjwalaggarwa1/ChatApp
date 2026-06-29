@@ -28,39 +28,42 @@ class InteractiveChatNode:
         self.active_writers = {}   # peer_id -> writer
         self._pending_handshakes = set()
 
-    async def ui_message_handler(self, peer_id, message: str):
-        """Triggers whenever a secure message unblocks on the stream"""
-        print(f"\n📩 [{peer_id[0]}:{peer_id[1]}]: {message}")
-        print(">> ", end="", flush=True)
-
-    async def run_node(self):
-        # --- THE FIX: HOOK THE CHAT ENTRY POINT ---
+        # Hook the chat entry point
         original_chat = self.manager._continuous_chat
         
-        async def hooked_chat(reader, writer, common_key):
+        async def hooked_chat(reader, writer, common_key, peer_tcp_port=None):
             peer = writer.get_extra_info('peername')
+            peer_port = peer_tcp_port if peer_tcp_port is not None else peer[1]
+            peer_id = (peer[0], peer_port)
             
             # Save the session details into our interactive state tracking arrays
-            self.active_sessions[peer] = common_key
-            self.active_writers[peer] = writer
+            self.active_sessions[peer_id] = common_key
+            self.active_writers[peer_id] = writer
             
-            print(f"\n🔒 [Secure Link Active] Connected with {peer[0]}:{peer[1]}")
+            print(f"\n[SECURE] [Secure Link Active] Connected with {peer_id[0]}:{peer_id[1]}")
             print(">> ", end="", flush=True)
             
             # Forward execution back to the main.py engine
             try:
-                await original_chat(reader, writer, common_key)
+                await original_chat(reader, writer, common_key, peer_tcp_port)
             finally:
                 # Clean up if the remote peer disconnects
-                self.active_sessions.pop(peer, None)
-                self.active_writers.pop(peer, None)
-                print(f"\n❌ [Disconnected] Lost link with {peer[0]}:{peer[1]}")
+                self.active_sessions.pop(peer_id, None)
+                self.active_writers.pop(peer_id, None)
+                print(f"\n[DISCONNECTED] Lost link with {peer_id[0]}:{peer_id[1]}")
                 print(">> ", end="", flush=True)
 
         # Inject our session tracking hook into the engine instance
         self.manager._continuous_chat = hooked_chat
 
-        print(f"🚀 Booting network socket engines for [{self.name}]...")
+    async def ui_message_handler(self, peer_id, message: str):
+        """Triggers whenever a secure message unblocks on the stream"""
+        print(f"\n[MSG] [{peer_id[0]}:{peer_id[1]}]: {message}")
+        print(">> ", end="", flush=True)
+
+    async def run_node(self):
+
+        print(f"[STARTING] Booting network socket engines for [{self.name}]...")
         server_task = asyncio.create_task(self.manager.start_server(port=0))
         await asyncio.sleep(0.5)
         
@@ -83,7 +86,7 @@ class InteractiveChatNode:
                 break
 
             elif command == "/list":
-                print("\n📡 --- DISCOVERED PEERS ---")
+                print("\n[DISCOVERY] --- DISCOVERED PEERS ---")
                 self.peer_map = list(self.manager.availability.items())
                 if not self.peer_map:
                     print("No active peers broadcasting on subnet yet.")
@@ -110,15 +113,13 @@ class InteractiveChatNode:
 
             else:
                 if not self.active_writers:
-                    print("❌ You aren't linked to an active secure session line yet. Use /connect")
+                    print("[ERROR] You aren't linked to an active secure session line yet. Use /connect")
                     continue
                     
                 dead_sessions = []
-                for peer_id, writer in list(self.active_writers.items()):
-                    try:
-                        key = self.active_sessions[peer_id]
-                        await send_text(writer, self.crypto, key, command)
-                    except Exception:
+                for peer_id in list(self.active_writers.keys()):
+                    success = await self.manager.send_message(peer_id[0], peer_id[1], command)
+                    if not success:
                         dead_sessions.append(peer_id)
                         
                 for dead in dead_sessions:
