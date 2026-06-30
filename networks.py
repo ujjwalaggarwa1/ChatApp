@@ -281,10 +281,12 @@ class connectionManager:
         peer_port = peer_tcp_port if peer_tcp_port is not None else peer[1]
         
         try:
-            while self.running:
+            while True:
                 raw_data = await reader.readline()
                 if not raw_data:
-                    break
+                    # break
+                    await asyncio.sleep(1)
+                    continue
                 
                 packet = json.loads(raw_data.decode('utf-8'))
                 
@@ -304,6 +306,8 @@ class connectionManager:
                             print(f"\n[{peer}]: {text}")
                         
         except ConnectionError as e:
+            logger.exception(f"Exception occurred\n\t{e}")
+        except Exception as e:
             logger.exception(f"Exception occurred\n\t{e}")
         finally:
             logger.info("backend chat instance CLOSED")

@@ -13,6 +13,7 @@ try:
     from textual.containers import Vertical, Horizontal, VerticalScroll
     from textual.binding import Binding
     
+    Logger.space_decorator()
     Logger.setup_logging(backup_count=1)
     logger = Logger.get_module_logger("Main")
 
@@ -34,8 +35,12 @@ class MainApp(App[None]): #type:ignore
 
     def __init__(self):
         super().__init__()
+        logger.info("Starting encryption processes")
+        print("Starting encryption processes")
         self.crypticEngine: Encryption = Encryption()
+        print("Done.\n")
         self.networkEngine: connectionManager | None = None
+        logger.info("starting the frontend")
 
 
     def on_mount(self) -> None:
@@ -45,11 +50,11 @@ class MainApp(App[None]): #type:ignore
         self.push_screen("setup")
 
 
-    def startNetworks(self, nodeUser:str):
+    def startNetworks(self, user:str):
         '''
         Starts the backend processes
         '''
-        self.networkEngine = connectionManager(nodeUser, self.crypticEngine)
+        self.networkEngine = connectionManager(user, self.crypticEngine)
         
         chat_screen = self.get_screen("chat")
         self.networkEngine.on_session_established = chat_screen.handle_session_established
@@ -67,6 +72,8 @@ class SetupScreen(Screen[None]): #type:ignore
     app: MainApp # the program was giving error without this type hint
     
     CSS_PATH = "styles/startup.tcss"
+    
+    logger.info("building setup screen")
     
     def compose(self) -> ComposeResult:
         self.title="SetUp Screen"
@@ -96,10 +103,12 @@ class SetupScreen(Screen[None]): #type:ignore
     def on_input_submitted(self, event: Input.Submitted) -> None:
         if not event.validation_result or not event.validation_result.is_valid:
             self.app.bell() #this is a cool function i found that will make a beep on wrong input :)
+            logger.info("name entered by the user is invalid")
             return 
         
         chosen_name = event.value.strip().capitalize()
-        
+        logger.info(f"Name selected: {chosen_name}")
+        logger.info("redirecting to the chat page")
         self.app.startNetworks(chosen_name)
         self.app.switch_screen("chat")
 
@@ -111,6 +120,7 @@ class ConversationPane(Widget):
         self.peer_name = peer_name
         self.peer_ip = peer_ip
         self.peer_port = peer_port
+        logger.info(f"conversation pane created for{self.peer_name}")
 
     def compose(self) -> ComposeResult:
         with Vertical():
@@ -121,10 +131,13 @@ class ChatScreen(Screen[None]): #type:ignore
     '''
     handles the discovery and chat page
     '''
+    logger.info("building chat page")
+    
     app: MainApp
     
     CSS_PATH = "styles/chat.tcss"
     has_active_popup = False
+    background_tasks = set()
     
     def compose(self) -> ComposeResult:
         self.title='Chat Screen'
@@ -160,6 +173,7 @@ class ChatScreen(Screen[None]): #type:ignore
 
     def establish_session(self, peer_name: str, peer_id: str) -> None:
         """this is called when a handshake succeeds to initialize the private chat panel."""
+        logger.info("establishing connection")
         switcher = self.query_one("#chat_switcher", ContentSwitcher)
         active_container = self.query_one("#connectedList", VerticalScroll) 
         
@@ -168,6 +182,7 @@ class ChatScreen(Screen[None]): #type:ignore
         # Check if already established
         try:
             self.query_one(f"#{safe_id}", ConversationPane)
+            logger.info('connection already established')
             return
         except Exception:
             pass
@@ -211,7 +226,9 @@ class ChatScreen(Screen[None]): #type:ignore
                 peer_ip, peer_port = peer_id
                 peer_name = profile.get("peer_name", "Unknown")
                 logger.info(f"Initiating connection handshake to {peer_name} ({peer_ip}:{peer_port})")
-                asyncio.create_task(engine._initiate_tcp(peer_ip, peer_port, {}))
+                task = asyncio.create_task(engine._initiate_tcp(peer_ip, peer_port, {}))
+                self.background_tasks.add(task)
+                task.add_done_callback(self.background_tasks.discard) # Removes itself when finished
             
         current_handshake = getattr(engine, "pending_handshake", None)
 

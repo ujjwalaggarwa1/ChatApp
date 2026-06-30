@@ -52,3 +52,12 @@ def get_module_logger(name:str = __name__):
         logger.addHandler(QueueHandler(_log_queue))
         
     return logger
+
+def space_decorator(file:str="app", log_dir:str="logs"):
+    from os import getcwd as g
+    path = f'{g()}\\{log_dir}\\{file}.log'
+    try:
+        with open(path, 'a') as f:
+            f.write('\n')
+    except Exception as e:
+        print(f'space_operation failed\n{e}')

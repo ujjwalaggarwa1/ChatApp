@@ -1,33 +1,46 @@
-2026-06-29 23:48:35,078 | INFO     | Networks | line:354 | Starting the backend server.
-2026-06-29 23:48:35,079 | INFO     | Networks | line:86 | Starting Broadcast
-2026-06-29 23:48:35,081 | INFO     | Networks | line:107 | starting listener
-2026-06-29 23:48:53,768 | INFO     | Networks | line:354 | Starting the backend server.
-2026-06-29 23:48:53,769 | INFO     | Networks | line:86 | Starting Broadcast
-2026-06-29 23:48:53,769 | INFO     | Networks | line:107 | starting listener
-2026-06-29 23:49:03,616 | INFO     | Networks | line:227 | initiating tcp request
-2026-06-29 23:49:03,617 | INFO     | Networks | line:156 | TCP connection request received
-2026-06-29 23:49:13,580 | INFO     | Networks | line:227 | initiating tcp request
-2026-06-29 23:49:13,582 | INFO     | Networks | line:156 | TCP connection request received
-2026-06-29 23:49:44,747 | INFO     | Networks | line:227 | initiating tcp request
-2026-06-29 23:49:44,748 | INFO     | Networks | line:156 | TCP connection request received
-2026-06-29 23:49:48,523 | INFO     | Networks | line:227 | initiating tcp request
-2026-06-29 23:49:48,525 | INFO     | Networks | line:156 | TCP connection request received
-2026-06-29 23:49:56,120 | INFO     | Networks | line:227 | initiating tcp request
-2026-06-29 23:49:56,121 | INFO     | Networks | line:156 | TCP connection request received
-2026-06-29 23:49:58,111 | INFO     | Networks | line:227 | initiating tcp request
-2026-06-29 23:49:58,112 | INFO     | Networks | line:156 | TCP connection request received
-2026-06-29 23:49:59,879 | INFO     | Networks | line:227 | initiating tcp request
-2026-06-29 23:49:59,880 | INFO     | Networks | line:156 | TCP connection request received
-2026-06-29 23:50:09,994 | INFO     | Networks | line:95 | shutting broadcast
-2026-06-29 23:50:09,994 | INFO     | Networks | line:218 | Closing receive_tcp
-2026-06-29 23:50:09,995 | INFO     | Networks | line:137 | Closing listener
-2026-06-29 23:50:09,995 | INFO     | Networks | line:218 | Closing receive_tcp
-2026-06-29 23:50:09,995 | INFO     | Networks | line:218 | Closing receive_tcp
-2026-06-29 23:50:09,995 | INFO     | Networks | line:218 | Closing receive_tcp
-2026-06-29 23:50:09,995 | INFO     | Networks | line:218 | Closing receive_tcp
-2026-06-29 23:50:09,996 | INFO     | Networks | line:364 | [Shutdown]: Background engine tasks canceled.
-2026-06-29 23:50:13,283 | INFO     | Networks | line:95 | shutting broadcast
-2026-06-29 23:50:13,283 | INFO     | Networks | line:137 | Closing listener
-2026-06-29 23:50:13,283 | INFO     | Networks | line:218 | Closing receive_tcp
-2026-06-29 23:50:13,283 | INFO     | Networks | line:218 | Closing receive_tcp
-2026-06-29 23:50:13,284 | INFO     | Networks | line:364 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 02:04:33,756 | INFO     | Main | line:76 | building setup screen
+2026-07-01 02:04:33,756 | INFO     | Main | line:134 | building chat page
+2026-07-01 02:04:33,769 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 02:04:34,439 | INFO     | Main | line:43 | starting the frontend
+
+2026-07-01 02:04:40,174 | INFO     | Main | line:76 | building setup screen
+2026-07-01 02:04:40,175 | INFO     | Main | line:134 | building chat page
+2026-07-01 02:04:40,187 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 02:04:40,855 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 02:04:42,615 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 02:04:42,615 | INFO     | Main | line:110 | Name selected: N4uer6
+2026-07-01 02:04:42,659 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 02:04:42,659 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 02:04:42,660 | INFO     | Networks | line:107 | starting listener
+2026-07-01 02:04:45,921 | INFO     | Main | line:110 | Name selected: Iy
+2026-07-01 02:04:45,921 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 02:04:45,967 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 02:04:45,968 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 02:04:45,969 | INFO     | Networks | line:107 | starting listener
+2026-07-01 02:04:50,982 | INFO     | Main | line:228 | Initiating connection handshake to N4uer6 (192.168.1.73:54170)
+2026-07-01 02:04:50,982 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 02:04:50,984 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 02:04:53,684 | INFO     | Main | line:176 | establishing connection
+2026-07-01 02:04:53,684 | INFO     | Main | line:123 | conversation pane created forIy
+2026-07-01 02:04:53,754 | INFO     | Main | line:176 | establishing connection
+2026-07-01 02:04:53,754 | INFO     | Main | line:185 | connection already established
+2026-07-01 02:04:53,754 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 02:04:53,813 | INFO     | Main | line:176 | establishing connection
+2026-07-01 02:04:53,813 | INFO     | Main | line:123 | conversation pane created forN4uer6
+2026-07-01 02:04:53,823 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 02:05:09,736 | INFO     | Main | line:185 | connection already established
+2026-07-01 02:05:09,736 | INFO     | Main | line:176 | establishing connection
+2026-07-01 02:05:11,700 | INFO     | Main | line:176 | establishing connection
+2026-07-01 02:05:11,701 | INFO     | Main | line:185 | connection already established
+2026-07-01 02:05:53,845 | INFO     | Main | line:176 | establishing connection
+2026-07-01 02:05:53,845 | INFO     | Main | line:185 | connection already established
+2026-07-01 02:11:21,739 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 02:11:21,739 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 02:11:21,740 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 02:11:21,740 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 02:11:51,583 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 02:11:51,584 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 02:11:51,584 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 02:11:51,584 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 02:11:51,584 | INFO     | Networks | line:218 | Closing receive_tcp
