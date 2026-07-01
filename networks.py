@@ -223,7 +223,7 @@ class connectionManager:
             writer.close()
             await writer.wait_closed()
     
-    async def _initiate_tcp(self, peer_ip, peer_port, peer_packet):
+    async def _initiate_tcp(self, peer_ip, peer_port):
         logger.info("initiating tcp request")
         try:
             reader, writer = await asyncio.open_connection(peer_ip, peer_port)

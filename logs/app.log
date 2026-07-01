@@ -44,3 +44,1327 @@
 2026-07-01 02:11:51,584 | INFO     | Networks | line:313 | backend chat instance CLOSED
 2026-07-01 02:11:51,584 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
 2026-07-01 02:11:51,584 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 14:34:22,041 | INFO     | Main | line:76 | building setup screen
+2026-07-01 14:34:22,042 | INFO     | Main | line:134 | building chat page
+2026-07-01 14:34:22,064 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 14:34:22,530 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 14:34:29,542 | INFO     | Main | line:110 | Name selected: Ujjwal
+2026-07-01 14:34:29,542 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 14:34:29,702 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 14:34:29,703 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 14:34:29,703 | INFO     | Networks | line:107 | starting listener
+2026-07-01 14:35:04,016 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 14:35:04,017 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 14:35:04,017 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 14:35:19,057 | INFO     | Main | line:76 | building setup screen
+2026-07-01 14:35:19,058 | INFO     | Main | line:134 | building chat page
+2026-07-01 14:35:19,074 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 14:35:19,806 | INFO     | Main | line:43 | starting the frontend
+
+2026-07-01 14:35:24,486 | INFO     | Main | line:76 | building setup screen
+2026-07-01 14:35:24,487 | INFO     | Main | line:134 | building chat page
+2026-07-01 14:35:24,505 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 14:35:25,468 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 14:35:28,932 | INFO     | Main | line:110 | Name selected: Ankit
+2026-07-01 14:35:28,932 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 14:35:28,998 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 14:35:28,998 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 14:35:28,999 | INFO     | Networks | line:107 | starting listener
+2026-07-01 14:35:33,223 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 14:35:33,223 | INFO     | Main | line:110 | Name selected: Ujjwal
+2026-07-01 14:35:33,283 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 14:35:33,284 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 14:35:33,285 | INFO     | Networks | line:107 | starting listener
+2026-07-01 14:35:36,572 | INFO     | Main | line:229 | Initiating connection handshake to Ankit (10.103.204.141:57160)
+2026-07-01 14:35:36,572 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 14:35:36,574 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 14:35:40,295 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:35:40,295 | INFO     | Main | line:123 | conversation pane created forUjjwal
+2026-07-01 14:35:40,373 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:35:40,374 | INFO     | Main | line:186 | connection already established
+2026-07-01 14:35:40,374 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 14:35:40,447 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:35:40,448 | INFO     | Main | line:123 | conversation pane created forUnknown Node
+2026-07-01 14:35:40,463 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 14:35:57,375 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:35:57,375 | INFO     | Main | line:186 | connection already established
+2026-07-01 14:35:58,724 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:35:58,724 | INFO     | Main | line:186 | connection already established
+
+2026-07-01 14:36:50,461 | INFO     | Main | line:76 | building setup screen
+2026-07-01 14:36:50,462 | INFO     | Main | line:134 | building chat page
+2026-07-01 14:36:50,481 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 14:36:51,771 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 14:36:54,164 | INFO     | Main | line:110 | Name selected: Iubiyo
+2026-07-01 14:36:54,164 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 14:36:54,236 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 14:36:54,237 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 14:36:54,238 | INFO     | Networks | line:107 | starting listener
+2026-07-01 14:36:57,099 | INFO     | Main | line:229 | Initiating connection handshake to Ankit (10.103.204.141:57160)
+2026-07-01 14:36:57,100 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 14:36:57,101 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 14:37:13,967 | INFO     | Main | line:229 | Initiating connection handshake to Iubiyo (10.103.204.141:53596)
+2026-07-01 14:37:13,967 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 14:37:13,968 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 14:37:26,534 | INFO     | Main | line:123 | conversation pane created forAnkit
+2026-07-01 14:37:26,533 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:37:26,579 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:37:26,580 | INFO     | Main | line:186 | connection already established
+2026-07-01 14:37:26,580 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 14:37:26,646 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:37:26,647 | INFO     | Main | line:123 | conversation pane created forIubiyo
+2026-07-01 14:37:26,655 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 14:38:12,247 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 14:38:12,247 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 14:38:12,247 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 14:38:12,248 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 14:38:12,248 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 14:38:12,250 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 14:38:12,250 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 14:38:22,387 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 14:38:22,387 | INFO     | Main | line:229 | Initiating connection handshake to Iubiyo (10.103.204.141:53596)
+2026-07-01 14:38:22,389 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 14:38:23,940 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:38:23,940 | INFO     | Main | line:123 | conversation pane created forUjjwal
+2026-07-01 14:38:23,959 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:38:23,959 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 14:38:23,959 | INFO     | Main | line:186 | connection already established
+2026-07-01 14:38:24,033 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:38:24,033 | INFO     | Main | line:123 | conversation pane created forUnknown Node
+2026-07-01 14:38:24,045 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 14:38:25,604 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:38:25,604 | INFO     | Main | line:186 | connection already established
+2026-07-01 14:38:26,384 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:38:26,384 | INFO     | Main | line:186 | connection already established
+2026-07-01 14:38:28,801 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:38:28,802 | INFO     | Main | line:186 | connection already established
+2026-07-01 14:38:29,628 | INFO     | Main | line:177 | establishing connection
+2026-07-01 14:38:29,628 | INFO     | Main | line:186 | connection already established
+2026-07-01 14:39:09,516 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 14:39:09,516 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 14:39:09,516 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 14:39:09,517 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 14:39:09,518 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 14:39:10,053 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 14:39:10,054 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 14:39:10,055 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 14:39:10,055 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 14:39:10,056 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 14:39:10,056 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 14:39:10,057 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 21:57:13,347 | INFO     | Main | line:76 | building setup screen
+2026-07-01 21:57:13,348 | INFO     | Main | line:134 | building chat page
+2026-07-01 21:57:13,364 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 21:57:14,873 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 21:57:23,213 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 21:57:23,213 | INFO     | Main | line:110 | Name selected: Ujjwal
+2026-07-01 21:57:23,282 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 21:57:23,282 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 21:57:23,283 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 21:57:31,627 | INFO     | Main | line:76 | building setup screen
+2026-07-01 21:57:31,628 | INFO     | Main | line:134 | building chat page
+2026-07-01 21:57:31,646 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 21:57:33,126 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 21:57:34,587 | INFO     | Main | line:110 | Name selected: P
+2026-07-01 21:57:34,587 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 21:57:34,650 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 21:57:34,650 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 21:57:34,651 | INFO     | Networks | line:107 | starting listener
+2026-07-01 21:57:41,561 | INFO     | Main | line:230 | Initiating connection handshake to P (192.168.1.73:50194)
+2026-07-01 21:57:41,561 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 21:57:41,563 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 21:57:44,834 | INFO     | Main | line:177 | establishing connection
+2026-07-01 21:57:44,834 | INFO     | Main | line:123 | conversation pane created forUjjwal
+2026-07-01 21:57:44,899 | INFO     | Main | line:177 | establishing connection
+2026-07-01 21:57:44,900 | INFO     | Main | line:186 | connection already established
+2026-07-01 21:57:44,900 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 21:57:44,968 | INFO     | Main | line:177 | establishing connection
+2026-07-01 21:57:44,969 | INFO     | Main | line:123 | conversation pane created forP
+2026-07-01 21:57:44,984 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 21:57:47,867 | INFO     | Main | line:177 | establishing connection
+2026-07-01 21:57:47,868 | INFO     | Main | line:186 | connection already established
+2026-07-01 21:57:53,936 | INFO     | Main | line:186 | connection already established
+2026-07-01 21:57:53,936 | INFO     | Main | line:177 | establishing connection
+2026-07-01 21:59:04,956 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 21:59:04,957 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 21:59:04,957 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 21:59:04,957 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 21:59:04,958 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 21:59:07,109 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 21:59:07,110 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 21:59:07,110 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 21:59:07,110 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 21:59:09,109 | INFO     | Main | line:134 | building chat page
+2026-07-01 21:59:09,107 | INFO     | Main | line:76 | building setup screen
+2026-07-01 21:59:09,124 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 21:59:11,422 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 21:59:13,107 | INFO     | Main | line:110 | Name selected: Ujj
+2026-07-01 21:59:13,108 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 21:59:13,174 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 21:59:13,174 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 21:59:13,175 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 21:59:16,377 | INFO     | Main | line:76 | building setup screen
+2026-07-01 21:59:16,378 | INFO     | Main | line:134 | building chat page
+2026-07-01 21:59:16,392 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 21:59:18,070 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 21:59:19,363 | INFO     | Main | line:110 | Name selected: Ll
+2026-07-01 21:59:19,363 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 21:59:19,430 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 21:59:19,429 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 21:59:19,431 | INFO     | Networks | line:107 | starting listener
+2026-07-01 21:59:23,593 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 21:59:23,594 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 21:59:23,594 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 22:00:37,649 | INFO     | Main | line:76 | building setup screen
+2026-07-01 22:00:37,650 | INFO     | Main | line:134 | building chat page
+2026-07-01 22:00:37,665 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 22:00:38,685 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 22:00:40,032 | INFO     | Main | line:110 | Name selected: G
+2026-07-01 22:00:40,032 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 22:00:40,100 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 22:00:40,101 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 22:00:40,102 | INFO     | Networks | line:107 | starting listener
+2026-07-01 22:00:42,355 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 22:00:42,356 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 22:00:42,356 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 22:00:47,530 | INFO     | Main | line:76 | building setup screen
+2026-07-01 22:00:47,531 | INFO     | Main | line:134 | building chat page
+2026-07-01 22:00:47,546 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 22:00:47,720 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 22:00:48,952 | INFO     | Main | line:110 | Name selected: Nutj
+2026-07-01 22:00:48,952 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 22:00:49,022 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 22:00:49,023 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 22:00:49,024 | INFO     | Networks | line:107 | starting listener
+2026-07-01 22:01:30,669 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 22:01:30,669 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 22:01:30,669 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 22:01:32,514 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 22:01:32,514 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 22:01:32,515 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 22:46:53,086 | INFO     | Main | line:76 | building setup screen
+2026-07-01 22:46:53,086 | INFO     | Main | line:134 | building chat page
+2026-07-01 22:46:53,095 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 22:46:54,726 | INFO     | Main | line:43 | starting the frontend
+
+2026-07-01 22:47:00,586 | INFO     | Main | line:76 | building setup screen
+2026-07-01 22:47:00,586 | INFO     | Main | line:134 | building chat page
+2026-07-01 22:47:00,595 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 22:47:02,040 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 22:47:05,440 | INFO     | Main | line:110 | Name selected: Ujanv
+2026-07-01 22:47:05,440 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 22:47:05,481 | INFO     | Networks | line:86 | Starting Broadcast
+d server.
+2026-07-01 22:47:05,481 | INFO     | Networks | line:107 | starting listener
+2026-07-01 22:47:09,015 | INFO     | Main | line:110 | Name selected: Aev
+2026-07-01 22:47:09,015 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 22:47:09,054 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 22:47:09,055 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 22:47:09,056 | INFO     | Networks | line:107 | starting listener
+2026-07-01 22:47:12,649 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 22:47:12,651 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 22:47:12,648 | INFO     | Main | line:229 | Initiating connection handshake to Ujanv (192.168.1.73:52076)
+2026-07-01 22:47:16,369 | INFO     | Main | line:177 | establishing connection
+2026-07-01 22:47:16,369 | INFO     | Main | line:123 | conversation pane created forAev
+2026-07-01 22:47:16,408 | INFO     | Main | line:177 | establishing connection
+2026-07-01 22:47:16,408 | INFO     | Main | line:186 | connection already established
+2026-07-01 22:47:16,408 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 22:47:16,463 | INFO     | Main | line:123 | conversation pane created forUjanv
+2026-07-01 22:47:16,463 | INFO     | Main | line:177 | establishing connection
+2026-07-01 22:47:16,469 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:00:56,150 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:00:56,150 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:00:56,150 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:00:56,150 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:00:56,151 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:00:58,950 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:00:58,950 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:00:58,950 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:00:58,950 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:01:04,325 | INFO     | Main | line:76 | building setup screen
+2026-07-01 23:01:04,326 | INFO     | Main | line:134 | building chat page
+2026-07-01 23:01:04,335 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 23:01:05,665 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 23:01:07,401 | INFO     | Main | line:110 | Name selected: Eqr
+2026-07-01 23:01:07,401 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 23:01:07,447 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:01:07,447 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:01:07,448 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:01:14,705 | INFO     | Main | line:76 | building setup screen
+2026-07-01 23:01:14,706 | INFO     | Main | line:134 | building chat page
+2026-07-01 23:01:14,719 | INFO     | Main | line:38 | Starting encryption processes
+2026-07-01 23:01:15,654 | INFO     | Main | line:43 | starting the frontend
+2026-07-01 23:01:17,258 | INFO     | Main | line:110 | Name selected: Qevqev
+2026-07-01 23:01:17,258 | INFO     | Main | line:111 | redirecting to the chat page
+2026-07-01 23:01:17,308 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:01:17,308 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:01:17,309 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:01:21,530 | INFO     | Main | line:230 | Initiating connection handshake to Eqr (192.168.1.73:63506)
+2026-07-01 23:01:21,530 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:01:21,532 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:01:24,371 | INFO     | Main | line:177 | establishing connection
+2026-07-01 23:01:24,371 | INFO     | Main | line:123 | conversation pane created for Qevqev
+2026-07-01 23:01:24,420 | INFO     | Main | line:177 | establishing connection
+2026-07-01 23:01:24,420 | INFO     | Main | line:186 | connection already established
+2026-07-01 23:01:24,420 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:01:24,466 | INFO     | Main | line:177 | establishing connection
+2026-07-01 23:01:24,466 | INFO     | Main | line:123 | conversation pane created for Eqr
+2026-07-01 23:01:24,475 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:04:39,333 | INFO     | Networks | line:137 | Closing listener
+
+2026-07-01 23:04:39,333 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:04:39,334 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:04:41,507 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:04:41,508 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:04:41,508 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:04:41,509 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:04:41,509 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:13:14,396 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:13:14,396 | INFO     | Main | line:136 | building chat page
+2026-07-01 23:13:14,407 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:13:15,654 | INFO     | Main | line:45 | starting the frontend
+
+2026-07-01 23:13:21,383 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:13:21,384 | INFO     | Main | line:136 | building chat page
+2026-07-01 23:13:21,394 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:13:21,803 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:13:24,790 | INFO     | Main | line:112 | Name selected: Ujjwal
+2026-07-01 23:13:24,790 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:13:24,831 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:13:24,832 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:13:24,832 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:13:31,227 | INFO     | Main | line:112 | Name selected: Prajwal
+2026-07-01 23:13:31,227 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:13:31,277 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:13:31,277 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:13:31,278 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:13:35,306 | INFO     | Main | line:232 | Initiating connection handshake to Ujjwal (192.168.1.73:49943)
+2026-07-01 23:13:35,306 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:13:35,308 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:13:38,327 | INFO     | Main | line:179 | establishing connection
+2026-07-01 23:13:38,327 | INFO     | Main | line:125 | conversation pane created for Prajwal
+2026-07-01 23:13:38,401 | INFO     | Main | line:188 | connection already established
+2026-07-01 23:13:38,401 | INFO     | Main | line:179 | establishing connection
+2026-07-01 23:13:38,401 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:13:38,446 | INFO     | Main | line:179 | establishing connection
+2026-07-01 23:13:38,446 | INFO     | Main | line:125 | conversation pane created for Ujjwal
+2026-07-01 23:13:38,455 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:28:04,221 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:28:04,221 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:28:04,222 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:28:04,222 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:28:04,223 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:28:06,247 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:28:06,247 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:28:06,247 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:28:06,247 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:28:08,983 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:28:08,983 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:28:08,994 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:28:10,938 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:28:13,939 | INFO     | Main | line:112 | Name selected: Ujjwal
+2026-07-01 23:28:13,939 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:28:13,979 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:28:13,980 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:28:13,980 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:28:17,422 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:28:17,423 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:28:17,432 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:28:18,654 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:28:22,043 | INFO     | Main | line:112 | Name selected: Prajwal
+2026-07-01 23:28:22,043 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:28:22,081 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:28:22,082 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:28:22,082 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:28:24,487 | INFO     | Main | line:242 | Initiating connection handshake to Ujjwal (192.168.1.73:65257)
+2026-07-01 23:28:24,488 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:28:24,489 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:28:27,136 | INFO     | Main | line:242 | Initiating connection handshake to Prajwal (192.168.1.73:65261)
+2026-07-01 23:28:27,137 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:28:27,138 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:28:29,730 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:28:33,342 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:28:36,945 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:28:36,945 | INFO     | Main | line:242 | Initiating connection handshake to Prajwal (192.168.1.73:65261)
+2026-07-01 23:28:36,946 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:28:40,894 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:28:40,895 | INFO     | Main | line:125 | conversation pane created for Ujjwal
+2026-07-01 23:28:40,946 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:28:40,946 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:28:40,946 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:28:40,998 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:28:40,999 | INFO     | Main | line:125 | conversation pane created for Prajwal
+2026-07-01 23:28:41,009 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:29:43,224 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:29:43,224 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:29:43,224 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:29:43,225 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:29:46,461 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:29:46,461 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:29:46,461 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:29:46,461 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:29:46,462 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 23:29:48,905 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:29:48,906 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:29:48,914 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:29:50,799 | INFO     | Main | line:45 | starting the frontend
+
+2026-07-01 23:29:53,194 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:29:53,194 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:29:53,203 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:29:54,693 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:29:57,405 | INFO     | Main | line:112 | Name selected: Ujjwal
+2026-07-01 23:29:57,405 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:29:57,443 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:29:57,443 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:29:57,444 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:30:07,786 | INFO     | Main | line:112 | Name selected: Ar
+2026-07-01 23:30:07,786 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:30:07,826 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:30:07,826 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:30:07,827 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:30:10,401 | INFO     | Main | line:242 | Initiating connection handshake to Ujjwal (192.168.1.73:51438)
+2026-07-01 23:30:10,401 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:30:10,403 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:30:14,679 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:30:14,679 | INFO     | Main | line:125 | conversation pane created for Ar
+2026-07-01 23:30:14,756 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:30:14,756 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:30:14,756 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:30:14,805 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:30:14,806 | INFO     | Main | line:125 | conversation pane created for Ujjwal
+2026-07-01 23:30:14,814 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:32:16,657 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:32:16,657 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:32:16,657 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:32:16,658 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:32:18,216 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:32:18,216 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:32:18,217 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:32:18,217 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:32:18,217 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 23:32:20,952 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:32:20,953 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:32:20,963 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:32:22,986 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:32:24,209 | INFO     | Main | line:112 | Name selected: 8ynv
+2026-07-01 23:32:24,209 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:32:24,253 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:32:24,253 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:32:24,254 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:32:31,570 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:32:31,570 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:32:31,580 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:32:32,392 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:32:33,690 | INFO     | Main | line:112 | Name selected: Yt
+2026-07-01 23:32:33,691 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:32:33,737 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:32:33,738 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:32:33,739 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:32:37,414 | INFO     | Main | line:242 | Initiating connection handshake to 8ynv (192.168.1.73:51445)
+2026-07-01 23:32:37,414 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:32:37,415 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:32:42,216 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:32:42,216 | INFO     | Main | line:125 | conversation pane created for Yt
+2026-07-01 23:32:42,272 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:32:42,272 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:32:42,272 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:32:42,324 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:32:42,324 | INFO     | Main | line:125 | conversation pane created for 8ynv
+2026-07-01 23:32:42,335 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:36:37,277 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:36:37,278 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:36:37,278 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:36:37,279 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:36:37,279 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 23:36:39,491 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:36:39,492 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:36:39,501 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:36:40,509 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:36:44,570 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:36:44,571 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:36:44,570 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:36:44,571 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:36:46,821 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:36:46,822 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:36:46,831 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:36:48,648 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:36:50,369 | INFO     | Main | line:112 | Name selected: V4t
+2026-07-01 23:36:50,369 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:36:50,417 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:36:50,417 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:36:50,418 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:36:54,363 | INFO     | Main | line:112 | Name selected: 3h5h
+2026-07-01 23:36:54,363 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:36:54,404 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:36:54,404 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:36:54,404 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:36:58,217 | INFO     | Main | line:242 | Initiating connection handshake to V4t (192.168.1.73:54147)
+2026-07-01 23:36:58,217 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:36:58,218 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:37:00,724 | INFO     | Main | line:125 | conversation pane created for 3h5h
+2026-07-01 23:37:00,724 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:37:00,742 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:37:00,742 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:37:00,742 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:37:00,794 | INFO     | Main | line:125 | conversation pane created for V4t
+2026-07-01 23:37:00,806 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:37:00,794 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:41:22,841 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:41:22,841 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:41:22,841 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:41:22,842 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:41:25,275 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:41:25,275 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:41:25,275 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:41:25,276 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:41:25,276 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 23:41:27,444 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:41:27,443 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:41:27,454 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:41:28,085 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:41:29,305 | INFO     | Main | line:112 | Name selected: 5nu4
+2026-07-01 23:41:29,305 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:41:29,344 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:41:29,344 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:41:29,345 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:41:32,571 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:41:32,571 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:41:32,581 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:41:34,909 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:41:36,262 | INFO     | Main | line:112 | Name selected: Dfve
+2026-07-01 23:41:36,262 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:41:36,308 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:41:36,308 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:41:36,309 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:41:39,926 | INFO     | Main | line:242 | Initiating connection handshake to 5nu4 (192.168.1.73:56289)
+2026-07-01 23:41:39,926 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:41:39,928 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:41:43,575 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:41:43,576 | INFO     | Main | line:125 | conversation pane created for Dfve
+2026-07-01 23:41:43,630 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:41:43,631 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:41:43,631 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:41:43,679 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:41:43,679 | INFO     | Main | line:125 | conversation pane created for 5nu4
+2026-07-01 23:41:43,691 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:42:30,490 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:42:30,490 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:42:30,490 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:42:30,491 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:42:30,491 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:42:32,842 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:42:32,842 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:42:32,842 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:42:32,842 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:42:40,871 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:42:40,872 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:42:40,884 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:42:41,894 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:42:43,402 | INFO     | Main | line:112 | Name selected: Wihn
+2026-07-01 23:42:43,402 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:42:43,441 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:42:43,441 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:42:43,442 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:42:48,957 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:42:48,958 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:42:48,968 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:42:50,584 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:42:51,750 | INFO     | Main | line:112 | Name selected: O
+2026-07-01 23:42:51,751 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:42:51,802 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:42:51,802 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:42:51,803 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:42:53,760 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:42:53,760 | INFO     | Main | line:242 | Initiating connection handshake to Wihn (192.168.1.73:56303)
+2026-07-01 23:42:53,762 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:42:55,797 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:42:55,797 | INFO     | Main | line:125 | conversation pane created for O
+2026-07-01 23:42:55,842 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:42:55,842 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:42:55,842 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:42:55,887 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:42:55,887 | INFO     | Main | line:125 | conversation pane created for Wihn
+2026-07-01 23:42:55,896 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:44:30,058 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:44:30,058 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:44:30,059 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:44:30,059 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:44:30,059 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:44:32,696 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:44:32,697 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:44:32,697 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:44:32,697 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:44:40,258 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:44:40,259 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:44:40,268 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:44:40,896 | INFO     | Main | line:45 | starting the frontend
+
+2026-07-01 23:44:43,341 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:44:43,341 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:44:43,351 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:44:44,533 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:44:45,773 | INFO     | Main | line:112 | Name selected: Vae
+2026-07-01 23:44:45,773 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:44:45,820 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:44:45,820 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:44:45,821 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:44:51,720 | INFO     | Main | line:112 | Name selected: Ujjwal
+2026-07-01 23:44:51,721 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:44:51,766 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:44:51,767 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:44:51,768 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:44:54,001 | INFO     | Main | line:242 | Initiating connection handshake to Vae (192.168.1.73:59581)
+2026-07-01 23:44:54,001 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:44:54,003 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:44:56,510 | INFO     | Main | line:125 | conversation pane created for Ujjwal
+2026-07-01 23:44:56,509 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:44:56,558 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:44:56,559 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:44:56,559 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:44:56,602 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:44:56,603 | INFO     | Main | line:125 | conversation pane created for Vae
+2026-07-01 23:44:56,613 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:45:26,568 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:45:26,569 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:45:26,569 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:45:26,569 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:45:26,569 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:45:29,586 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:45:29,587 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:45:29,587 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:45:29,587 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:45:32,542 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:45:32,542 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:45:32,553 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:45:33,281 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:45:36,376 | INFO     | Main | line:112 | Name selected: Ujjwal
+2026-07-01 23:45:36,377 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:45:36,423 | INFO     | Networks | line:86 | Starting Broadcast
+d server.
+2026-07-01 23:45:36,423 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:45:42,660 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:45:42,661 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:45:42,671 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:45:43,617 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:45:48,845 | INFO     | Main | line:112 | Name selected: <zero>
+2026-07-01 23:45:48,845 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:45:48,892 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:45:48,892 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:45:48,893 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:45:52,630 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:45:52,630 | INFO     | Main | line:242 | Initiating connection handshake to Ujjwal (192.168.1.73:55452)
+2026-07-01 23:45:52,632 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:45:55,113 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:45:55,114 | INFO     | Main | line:125 | conversation pane created for <zero>
+2026-07-01 23:45:55,170 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:45:55,170 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:45:55,171 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:45:55,216 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:45:55,217 | INFO     | Main | line:125 | conversation pane created for Ujjwal
+2026-07-01 23:45:55,226 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:50:44,517 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:50:44,517 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:50:44,517 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:50:44,518 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:50:46,383 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:50:46,383 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:50:46,383 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:50:46,383 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:50:46,384 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 23:51:03,026 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:51:03,027 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:51:03,035 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:51:03,898 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:51:09,395 | INFO     | Main | line:112 | Name selected: Ujjwal
+2026-07-01 23:51:09,396 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:51:09,439 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:51:09,439 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:51:09,440 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:51:14,932 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:51:14,933 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:51:14,942 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:51:15,777 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:51:19,415 | INFO     | Main | line:112 | Name selected: Me
+2026-07-01 23:51:19,415 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:51:19,458 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:51:19,459 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:51:19,459 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:51:23,082 | INFO     | Main | line:242 | Initiating connection handshake to Ujjwal (192.168.1.73:64632)
+2026-07-01 23:51:23,082 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:51:23,083 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:51:32,788 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:51:32,788 | INFO     | Main | line:125 | conversation pane created for Me
+2026-07-01 23:51:32,858 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:51:32,858 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:51:32,858 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:51:32,900 | INFO     | Main | line:125 | conversation pane created for Unknown Node
+2026-07-01 23:51:32,912 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:51:32,900 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:52:55,893 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:52:55,893 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:52:55,893 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:52:55,894 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:52:55,894 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:52:58,627 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:52:58,627 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:52:58,627 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:52:58,628 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:53:00,386 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:53:00,387 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:53:00,395 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:53:02,762 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:53:05,716 | INFO     | Main | line:112 | Name selected: G
+2026-07-01 23:53:05,716 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:53:05,756 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:53:05,757 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:53:05,758 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:53:09,929 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:53:09,929 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:53:09,938 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:53:10,709 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:53:11,798 | INFO     | Main | line:112 | Name selected: Www
+2026-07-01 23:53:11,798 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:53:11,846 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:53:11,847 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:53:11,847 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:53:15,250 | INFO     | Main | line:242 | Initiating connection handshake to G (192.168.1.73:64644)
+2026-07-01 23:53:15,251 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:53:15,252 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:53:17,373 | INFO     | Main | line:125 | conversation pane created for Www
+2026-07-01 23:53:17,373 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:53:17,423 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:53:17,423 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:53:17,423 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:53:17,469 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:53:17,477 | INFO     | Networks | line:278 | backend chat instance made
+
+2026-07-01 23:54:48,772 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:54:48,773 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:54:48,773 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:54:48,773 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:54:48,773 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 23:54:50,849 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:54:50,850 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:54:50,859 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:54:51,289 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:54:53,488 | INFO     | Main | line:112 | Name selected: Tv4r
+2026-07-01 23:54:53,489 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:54:53,537 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:54:53,537 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:54:53,538 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:54:57,506 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:54:57,506 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:54:57,507 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:54:57,507 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:54:59,459 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:54:59,460 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:54:59,469 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:55:01,374 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:55:02,534 | INFO     | Main | line:112 | Name selected: Worgwwrg
+2026-07-01 23:55:02,534 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:55:02,573 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:55:02,573 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:55:02,574 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:55:05,993 | INFO     | Main | line:242 | Initiating connection handshake to Tv4r (192.168.1.73:64653)
+2026-07-01 23:55:05,993 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:55:05,994 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:55:09,719 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:55:09,719 | INFO     | Main | line:125 | conversation pane created for Worgwwrg
+2026-07-01 23:55:09,770 | INFO     | Main | line:180 | establishing connection
+ished
+2026-07-01 23:55:09,770 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:55:09,813 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:55:09,813 | INFO     | Main | line:125 | conversation pane created for Tv4r
+2026-07-01 23:55:09,823 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:57:15,695 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:57:15,696 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:57:15,696 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:57:15,696 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:57:15,697 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:57:17,427 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:57:17,428 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:57:17,428 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:57:17,429 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:57:19,863 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:57:19,864 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:57:19,874 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:57:20,570 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:57:23,666 | INFO     | Main | line:112 | Name selected: Ht
+2026-07-01 23:57:23,666 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:57:23,708 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:57:23,709 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:57:23,710 | INFO     | Networks | line:107 | starting listener
+
+2026-07-01 23:57:26,944 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:57:26,944 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:57:26,953 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:57:30,288 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:57:31,436 | INFO     | Main | line:112 | Name selected: Ssssssss
+2026-07-01 23:57:31,436 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:57:31,480 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:57:31,479 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:57:31,481 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:57:34,135 | INFO     | Main | line:242 | Initiating connection handshake to Ht (192.168.1.73:52959)
+2026-07-01 23:57:34,135 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:57:34,136 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:57:36,026 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:57:36,026 | INFO     | Main | line:125 | conversation pane created for Ssssssss
+2026-07-01 23:57:36,066 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:57:36,066 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:57:36,066 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:57:36,107 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:57:36,117 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:57:36,107 | INFO     | Main | line:125 | conversation pane created for Ht
+2026-07-01 23:57:55,220 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:57:55,220 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:57:55,221 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:57:55,221 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:57:55,221 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-01 23:57:57,190 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:57:57,191 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:57:57,191 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:57:57,191 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:57:59,102 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:57:59,103 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:57:59,112 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:58:01,704 | INFO     | Main | line:45 | starting the frontend
+
+2026-07-01 23:58:02,394 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:58:02,395 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:58:02,404 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:58:02,687 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:58:04,078 | INFO     | Main | line:112 | Name selected: Iugv
+2026-07-01 23:58:04,078 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:58:04,118 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:58:04,119 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:58:04,119 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:58:08,623 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:58:08,665 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:58:08,665 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:58:08,666 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:58:11,132 | INFO     | Main | line:242 | Initiating connection handshake to Iugv (192.168.1.73:52973)
+2026-07-01 23:58:11,133 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:58:11,134 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:58:13,657 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:58:13,657 | INFO     | Main | line:125 | conversation pane created for Wrgvrrr
+2026-07-01 23:58:13,705 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:58:13,705 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:58:13,705 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:58:13,753 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:58:13,761 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:58:13,753 | INFO     | Main | line:125 | conversation pane created for Iugv
+2026-07-01 23:58:32,546 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:58:32,546 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:58:32,547 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:58:32,547 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:58:32,547 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 23:58:34,813 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:58:34,814 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:58:34,823 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:58:35,078 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:58:37,649 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:58:37,649 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:58:37,650 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:58:37,650 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:58:38,730 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:58:38,731 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:58:38,741 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:58:39,291 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:58:40,560 | INFO     | Main | line:112 | Name selected: I5tmg
+2026-07-01 23:58:40,560 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:58:40,596 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:58:40,597 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:58:40,597 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:58:45,926 | INFO     | Main | line:112 | Name selected: Gtver
+2026-07-01 23:58:45,927 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:58:45,965 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:58:45,965 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:58:45,966 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:58:48,049 | INFO     | Main | line:242 | Initiating connection handshake to I5tmg (192.168.1.73:52982)
+2026-07-01 23:58:48,049 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:58:48,050 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:58:51,384 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:58:51,384 | INFO     | Main | line:125 | conversation pane created for Gtver
+2026-07-01 23:58:51,402 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:58:51,402 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:58:51,468 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:58:51,468 | INFO     | Main | line:125 | conversation pane created for I5tmg
+2026-07-01 23:58:51,478 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:59:21,618 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:59:21,618 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:59:21,618 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:59:21,619 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-01 23:59:21,619 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-01 23:59:24,704 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:59:24,704 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:59:24,712 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:59:26,541 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:59:27,251 | INFO     | Networks | line:137 | Closing listener
+2026-07-01 23:59:27,251 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-01 23:59:27,252 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-01 23:59:27,252 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-01 23:59:28,686 | INFO     | Main | line:78 | building setup screen
+2026-07-01 23:59:28,687 | INFO     | Main | line:137 | building chat page
+2026-07-01 23:59:28,697 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-01 23:59:29,639 | INFO     | Main | line:45 | starting the frontend
+2026-07-01 23:59:31,204 | INFO     | Main | line:112 | Name selected: Frv
+2026-07-01 23:59:31,204 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:59:31,244 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:59:31,244 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:59:31,245 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:59:35,304 | INFO     | Main | line:112 | Name selected: Rwgv
+2026-07-01 23:59:35,304 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-01 23:59:35,356 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-01 23:59:35,357 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-01 23:59:35,358 | INFO     | Networks | line:107 | starting listener
+2026-07-01 23:59:37,756 | INFO     | Main | line:242 | Initiating connection handshake to Frv (192.168.1.73:51157)
+2026-07-01 23:59:37,756 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-01 23:59:37,757 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-01 23:59:41,648 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:59:41,648 | INFO     | Main | line:125 | conversation pane created for Rwgv
+2026-07-01 23:59:41,695 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:59:41,695 | INFO     | Main | line:189 | connection already established
+2026-07-01 23:59:41,695 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-01 23:59:41,740 | INFO     | Main | line:125 | conversation pane created for Frv
+2026-07-01 23:59:41,739 | INFO     | Main | line:180 | establishing connection
+2026-07-01 23:59:41,748 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:03:48,326 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:03:48,322 | ERROR    | Networks | line:311 | Exception occurred
+	Separator is found, but chunk is longer than limit
+Traceback (most recent call last):
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 562, in readline
+    line = await self.readuntil(sep)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 680, in readuntil
+    raise exceptions.LimitOverrunError(
+        'Separator is found, but chunk is longer than limit', match_start)
+asyncio.exceptions.LimitOverrunError: Separator is found, but chunk is longer than limit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\ujjwal\LPU\ChatApp\networks.py", line 285, in _continuous_chat
+    raw_data = await reader.readline()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 571, in readline
+    raise ValueError(e.args[0])
+ValueError: Separator is found, but chunk is longer than limit
+2026-07-02 00:03:48,326 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-02 00:05:45,976 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:05:45,976 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:05:45,976 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:05:45,977 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-02 00:05:52,772 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:05:52,772 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:05:52,773 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:05:57,055 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:05:57,055 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:05:57,064 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:05:57,708 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:05:59,057 | INFO     | Main | line:112 | Name selected: Wrv
+2026-07-02 00:05:59,057 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:05:59,098 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:05:59,098 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:05:59,099 | INFO     | Networks | line:107 | starting listener
+
+2026-07-02 00:06:02,327 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:06:02,328 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:06:02,339 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:06:03,631 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:06:05,007 | INFO     | Main | line:112 | Name selected: Wrwmv
+2026-07-02 00:06:05,007 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:06:05,045 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:06:05,045 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:06:05,046 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:06:06,628 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-02 00:06:06,628 | INFO     | Main | line:242 | Initiating connection handshake to Wrv (192.168.1.73:53875)
+2026-07-02 00:06:06,630 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-02 00:06:09,206 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:06:09,206 | INFO     | Main | line:125 | conversation pane created for Wrwmv
+2026-07-02 00:06:09,242 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:06:09,242 | INFO     | Main | line:189 | connection already established
+2026-07-02 00:06:09,242 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:06:09,289 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:06:09,290 | INFO     | Main | line:125 | conversation pane created for Wrv
+2026-07-02 00:06:09,298 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:06:22,005 | ERROR    | Networks | line:311 | Exception occurred
+	Separator is found, but chunk is longer than limit
+Traceback (most recent call last):
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 562, in readline
+    line = await self.readuntil(sep)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 680, in readuntil
+    raise exceptions.LimitOverrunError(
+        'Separator is found, but chunk is longer than limit', match_start)
+asyncio.exceptions.LimitOverrunError: Separator is found, but chunk is longer than limit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\ujjwal\LPU\ChatApp\networks.py", line 285, in _continuous_chat
+    raw_data = await reader.readline()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 571, in readline
+    raise ValueError(e.args[0])
+ValueError: Separator is found, but chunk is longer than limit
+2026-07-02 00:06:22,007 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:06:22,008 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-02 00:06:43,556 | INFO     | Main | line:242 | Initiating connection handshake to Wrwmv (192.168.1.73:53887)
+2026-07-02 00:06:43,556 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-02 00:06:43,558 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-02 00:06:45,660 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:06:45,660 | INFO     | Main | line:189 | connection already established
+2026-07-02 00:06:45,678 | INFO     | Main | line:189 | connection already established
+2026-07-02 00:06:45,678 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:06:45,678 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:06:45,725 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:06:45,726 | INFO     | Main | line:125 | conversation pane created for Wrwmv
+2026-07-02 00:06:45,733 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:06:58,330 | ERROR    | Networks | line:309 | Exception occurred
+	[WinError 64] The specified network name is no longer available
+Traceback (most recent call last):
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\windows_events.py", line 463, in finish_socket_func
+    return ov.getresult()
+           ~~~~~~~~~~~~^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\ujjwal\LPU\ChatApp\networks.py", line 285, in _continuous_chat
+    raw_data = await reader.readline()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 562, in readline
+    line = await self.readuntil(sep)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 677, in readuntil
+    await self._wait_for_data('readuntil')
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\windows_events.py", line 807, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\windows_events.py", line 467, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2026-07-02 00:06:58,341 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:06:58,341 | ERROR    | Networks | line:216 | Exception occurred
+	[WinError 64] The specified network name is no longer available
+Traceback (most recent call last):
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\windows_events.py", line 463, in finish_socket_func
+    return ov.getresult()
+           ~~~~~~~~~~~~^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\ujjwal\LPU\ChatApp\networks.py", line 213, in _receive_tcp
+    await self._continuous_chat(reader, writer, common_key, peer_tcp_port or peer[1])
+  File "A:\ujjwal\LPU\ChatApp\networks.py", line 315, in _continuous_chat
+    await writer.wait_closed()
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 358, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\windows_events.py", line 807, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\windows_events.py", line 467, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+
+2026-07-02 00:07:09,222 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:07:09,223 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:07:09,235 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:07:10,208 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:07:11,738 | INFO     | Main | line:112 | Name selected: Wrtvw
+2026-07-02 00:07:11,738 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:07:11,779 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:07:11,779 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:07:11,781 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:07:20,681 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-02 00:07:20,681 | INFO     | Main | line:242 | Initiating connection handshake to Wrwmv (192.168.1.73:53887)
+2026-07-02 00:07:20,682 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-02 00:07:23,445 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:07:23,445 | INFO     | Main | line:125 | conversation pane created for Wrtvw
+2026-07-02 00:07:23,485 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:07:23,485 | INFO     | Main | line:189 | connection already established
+2026-07-02 00:07:23,485 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:07:23,537 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:07:23,537 | INFO     | Main | line:125 | conversation pane created for Wrwmv
+2026-07-02 00:07:23,546 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:07:27,855 | ERROR    | Networks | line:311 | Exception occurred
+	Separator is found, but chunk is longer than limit
+Traceback (most recent call last):
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 562, in readline
+    line = await self.readuntil(sep)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 680, in readuntil
+    raise exceptions.LimitOverrunError(
+        'Separator is found, but chunk is longer than limit', match_start)
+asyncio.exceptions.LimitOverrunError: Separator is found, but chunk is longer than limit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\ujjwal\LPU\ChatApp\networks.py", line 285, in _continuous_chat
+    raw_data = await reader.readline()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 571, in readline
+    raise ValueError(e.args[0])
+ValueError: Separator is found, but chunk is longer than limit
+2026-07-02 00:07:27,856 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:07:27,857 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-02 00:07:43,656 | INFO     | Main | line:242 | Initiating connection handshake to Wrtvw (192.168.1.73:53904)
+2026-07-02 00:07:43,657 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-02 00:07:43,658 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-02 00:07:46,088 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:07:46,088 | INFO     | Main | line:189 | connection already established
+2026-07-02 00:07:46,116 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:07:46,116 | INFO     | Main | line:189 | connection already established
+2026-07-02 00:07:46,116 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:07:46,161 | INFO     | Main | line:125 | conversation pane created for Wrtvw
+2026-07-02 00:07:46,168 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:07:46,160 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:07:52,275 | ERROR    | Networks | line:311 | Exception occurred
+	Separator is found, but chunk is longer than limit
+Traceback (most recent call last):
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 562, in readline
+    line = await self.readuntil(sep)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 680, in readuntil
+    raise exceptions.LimitOverrunError(
+        'Separator is found, but chunk is longer than limit', match_start)
+asyncio.exceptions.LimitOverrunError: Separator is found, but chunk is longer than limit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\ujjwal\LPU\ChatApp\networks.py", line 285, in _continuous_chat
+    raw_data = await reader.readline()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 571, in readline
+    raise ValueError(e.args[0])
+ValueError: Separator is found, but chunk is longer than limit
+2026-07-02 00:07:52,277 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:07:52,278 | INFO     | Networks | line:218 | Closing receive_tcp
+2026-07-02 00:08:37,573 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:08:37,573 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:08:37,574 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:08:37,574 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:08:37,576 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-02 00:08:39,571 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:08:39,571 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:08:39,571 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:08:39,571 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:08:47,778 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:08:47,778 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:08:47,787 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:08:49,050 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:08:50,715 | INFO     | Main | line:112 | Name selected: Wtvr
+2026-07-02 00:08:50,716 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:08:50,758 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:08:50,758 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:08:50,760 | INFO     | Networks | line:107 | starting listener
+
+2026-07-02 00:08:56,406 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:08:56,406 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:08:56,415 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:08:58,381 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:08:59,125 | INFO     | Main | line:112 | Name selected: Y
+2026-07-02 00:08:59,125 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:08:59,167 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:08:59,167 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:08:59,168 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:09:00,982 | INFO     | Main | line:242 | Initiating connection handshake to Wtvr (192.168.1.73:53915)
+2026-07-02 00:09:00,982 | INFO     | Networks | line:227 | initiating tcp request
+2026-07-02 00:09:00,983 | INFO     | Networks | line:156 | TCP connection request received
+2026-07-02 00:09:02,950 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:09:02,950 | INFO     | Main | line:125 | conversation pane created for Y
+2026-07-02 00:09:03,001 | INFO     | Main | line:189 | connection already established
+2026-07-02 00:09:03,001 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:09:03,001 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:09:03,051 | INFO     | Main | line:125 | conversation pane created for Wtvr
+2026-07-02 00:09:03,050 | INFO     | Main | line:180 | establishing connection
+2026-07-02 00:09:03,061 | INFO     | Networks | line:278 | backend chat instance made
+2026-07-02 00:09:33,870 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:09:33,870 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:09:33,870 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:09:33,871 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-02 00:09:35,138 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:09:35,138 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:09:35,139 | INFO     | Networks | line:313 | backend chat instance CLOSED
+2026-07-02 00:09:35,139 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-02 00:09:35,139 | INFO     | Networks | line:218 | Closing receive_tcp
+
+2026-07-02 00:14:42,162 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:14:42,163 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:14:42,172 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:14:42,789 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:14:44,116 | INFO     | Main | line:112 | Name selected: Wrv
+2026-07-02 00:14:44,116 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:14:44,417 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:14:44,418 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:14:44,418 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:14:44,481 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:14:44,482 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-02 00:14:44,482 | INFO     | Networks | line:137 | Closing listener
+
+2026-07-02 00:15:20,738 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:15:20,739 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:15:20,748 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:15:22,247 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:15:23,651 | INFO     | Main | line:112 | Name selected: 5et4
+2026-07-02 00:15:23,652 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:15:23,689 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:15:23,689 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:15:23,690 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:16:54,807 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:16:54,807 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:16:54,807 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:16:56,413 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:16:56,412 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:16:56,422 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:16:57,444 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:16:59,262 | INFO     | Main | line:112 | Name selected: Egtbv\
+2026-07-02 00:16:59,262 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:16:59,304 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:16:59,305 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:16:59,305 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:17:05,699 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:17:05,699 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:17:05,700 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:17:07,442 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:17:07,443 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:17:07,452 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:17:08,538 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:17:12,993 | INFO     | Main | line:112 | Name selected: Aggarwal
+2026-07-02 00:17:12,993 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:17:13,039 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:17:13,039 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:17:13,040 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:19:59,436 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:19:59,437 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:19:59,437 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:20:01,083 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:20:01,084 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:20:01,093 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:20:02,872 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:20:05,403 | INFO     | Main | line:112 | Name selected: Tun
+2026-07-02 00:20:05,403 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:20:05,990 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:20:05,990 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:20:05,991 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:20:06,036 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:20:06,036 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+2026-07-02 00:20:06,035 | INFO     | Networks | line:95 | shutting broadcast
+
+2026-07-02 00:23:45,368 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:23:45,369 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:23:45,379 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:23:45,991 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:23:47,205 | INFO     | Main | line:112 | Name selected: Tu54
+2026-07-02 00:23:47,205 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:23:47,254 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:23:47,254 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:23:47,255 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:24:39,847 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:24:39,848 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:24:39,848 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:24:41,293 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:24:41,293 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:24:41,302 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:24:41,373 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:24:42,999 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:24:42,999 | INFO     | Main | line:112 | Name selected: 54y6u
+2026-07-02 00:24:43,058 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:24:43,058 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:24:43,059 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:25:33,543 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:25:33,544 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:25:33,544 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:25:36,959 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:25:36,959 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:25:36,968 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:25:37,286 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:25:38,344 | INFO     | Main | line:112 | Name selected: Y
+2026-07-02 00:25:38,344 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:25:38,385 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:25:38,385 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:25:38,386 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:31:35,221 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:31:35,221 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:31:35,221 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:31:36,780 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:31:36,781 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:31:36,790 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:31:38,049 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:31:40,189 | INFO     | Main | line:112 | Name selected: Ujjwal
+2026-07-02 00:31:40,189 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:31:40,225 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:31:40,225 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:31:40,226 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:35:53,028 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:35:53,029 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:35:53,029 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.
+
+2026-07-02 00:35:54,653 | INFO     | Main | line:78 | building setup screen
+2026-07-02 00:35:54,654 | INFO     | Main | line:137 | building chat page
+2026-07-02 00:35:54,664 | INFO     | Main | line:40 | Starting encryption processes
+2026-07-02 00:35:55,450 | INFO     | Main | line:45 | starting the frontend
+2026-07-02 00:35:58,623 | INFO     | Main | line:112 | Name selected: Ujjwal
+2026-07-02 00:35:58,623 | INFO     | Main | line:113 | redirecting to the chat page
+2026-07-02 00:35:58,925 | INFO     | Networks | line:358 | Starting the backend server.
+2026-07-02 00:35:58,925 | INFO     | Networks | line:86 | Starting Broadcast
+2026-07-02 00:35:58,926 | INFO     | Networks | line:107 | starting listener
+2026-07-02 00:35:58,986 | INFO     | Networks | line:137 | Closing listener
+2026-07-02 00:35:58,986 | INFO     | Networks | line:95 | shutting broadcast
+2026-07-02 00:35:58,986 | INFO     | Networks | line:368 | [Shutdown]: Background engine tasks canceled.

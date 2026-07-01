@@ -5,7 +5,7 @@ It is a secure terminal chat app that is made on `python`. It follows `end to en
 > Quick note: `I made this project myself` and used AI only for the idea of the project and some minor explanation of module functions
 
 - documented use of AI
-    - The [testing file](test3.py) was made by AI because i got tired
+    - The testing file was made by AI because i got tired
     - It was used for debugging when it was time for ui and backend integration
 
 ---

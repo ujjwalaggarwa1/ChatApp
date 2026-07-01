@@ -12,6 +12,8 @@ try:
     from textual.validation import Regex
     from textual.containers import Vertical, Horizontal, VerticalScroll
     from textual.binding import Binding
+
+    from rich.text import Text
     
     Logger.space_decorator()
     Logger.setup_logging(backup_count=1)
@@ -120,10 +122,11 @@ class ConversationPane(Widget):
         self.peer_name = peer_name
         self.peer_ip = peer_ip
         self.peer_port = peer_port
-        logger.info(f"conversation pane created for{self.peer_name}")
+        logger.info(f"conversation pane created for {self.peer_name}")
 
     def compose(self) -> ComposeResult:
         with Vertical():
+            yield Static("Waiting for connection...", id="chat_header")
             yield RichLog(id=f"log_{self.id}", max_lines=1000, wrap=True)
             yield Input(placeholder=f"Message {self.peer_name}...", id=f"input_{self.id}")
 
@@ -140,9 +143,11 @@ class ChatScreen(Screen[None]): #type:ignore
     background_tasks = set()
     
     def compose(self) -> ComposeResult:
-        self.title='Chat Screen'
-        
-        yield Header(show_clock=True, time_format="%I:%M:%S%p", icon="Chat")
+        username = Text(self.app.networkEngine.name, style='bold greenS')
+        self.title = username
+        head = self.query_one(Header(show_clock=True, time_format="%I:%M:%S%p", icon="Chat"))
+        head.title = username
+        yield head
 
         with Horizontal():
             
@@ -173,6 +178,7 @@ class ChatScreen(Screen[None]): #type:ignore
 
     def establish_session(self, peer_name: str, peer_id: str) -> None:
         """this is called when a handshake succeeds to initialize the private chat panel."""
+
         logger.info("establishing connection")
         switcher = self.query_one("#chat_switcher", ContentSwitcher)
         active_container = self.query_one("#connectedList", VerticalScroll) 
@@ -199,7 +205,16 @@ class ChatScreen(Screen[None]): #type:ignore
         
         sidebar_btn = Button(f"{peer_name}", id=f"btn_{safe_id}")
         active_container.mount(sidebar_btn)
+
+        peer_device = "Unknown Device"
+        if self.app.networkEngine:
+            profile = self.app.networkEngine.availability.get((peer_ip, peer_port))
+            if profile:
+                peer_device = profile.get("device", "Unknown Device")
         
+        header = self.query_one("#chat_header", Static)
+        header.update(f"[bold orange]{peer_name}[/] ([white]{peer_device}[/])")
+
         # Automatically switch to the new session
         switcher.current = safe_id
 
@@ -218,17 +233,19 @@ class ChatScreen(Screen[None]): #type:ignore
             # Clicked on an available peer, initiate connection
             target_peer = None
             for p_id, profile in engine.availability.items():
-                if f"avail_{profile.get('safe_id')}" == button_id:
+                if f"avail_{profile.get('safe_id')}" == button_id and p_id not in engine.active_sessions:
                     target_peer = (p_id, profile)
                     break
+            
             if target_peer:
                 peer_id, profile = target_peer
                 peer_ip, peer_port = peer_id
                 peer_name = profile.get("peer_name", "Unknown")
                 logger.info(f"Initiating connection handshake to {peer_name} ({peer_ip}:{peer_port})")
-                task = asyncio.create_task(engine._initiate_tcp(peer_ip, peer_port, {}))
+                task = asyncio.create_task(engine._initiate_tcp(peer_ip, peer_port))
                 self.background_tasks.add(task)
                 task.add_done_callback(self.background_tasks.discard) # Removes itself when finished
+
             
         current_handshake = getattr(engine, "pending_handshake", None)
 
@@ -246,6 +263,7 @@ class ChatScreen(Screen[None]): #type:ignore
             
             self.query_one("#notification_zone").remove_class("visible")
             self.has_active_popup = False
+            engine.pending_handshake = None
 
         elif button_id == "btn_decline_req":
             if current_handshake:
@@ -254,6 +272,7 @@ class ChatScreen(Screen[None]): #type:ignore
             
             self.query_one("#notification_zone").remove_class("visible")
             self.has_active_popup = False
+            engine.pending_handshake = None
 
     async def on_input_submitted(self, event: Input.Submitted) -> None:
         input_widget = event.input
@@ -275,12 +294,13 @@ class ChatScreen(Screen[None]): #type:ignore
                 # Send message asynchronously
                 success = await self.app.networkEngine.send_message(pane.peer_ip, pane.peer_port, message)
                 
-                # Write to local UI log
+                safe_msg = Text("You: ", style="bold green")
                 log_widget = pane.query_one(f"#log_{pane.id}", RichLog)
                 if success:
-                    log_widget.write(f"[bold green]You[/]: {message}")
+                    safe_msg.append(message, style="white")
+                    log_widget.write(safe_msg)
                 else:
-                    log_widget.write(f"[bold red]System: Failed to send message to {pane.peer_name}[/]")
+                    log_widget.write(Text.from_markup(f"[bold red]System: Failed to send message to [/][bold white] {pane.peer_name}[/]"))
 
     def handle_session_established(self, peer_ip: str, peer_port: int, peer_name: str) -> None:
         """Triggered from backend when a connection establishes."""
@@ -322,9 +342,12 @@ class ChatScreen(Screen[None]): #type:ignore
                 if session:
                     peer_name = session.get("peer_name", "Unknown")
             
-            log_widget.write(f"[bold cyan]{peer_name}[/]: {text}")
+            safe_reply = Text(f"{peer_name}: ", style="bold cyan")
+            safe_reply.append(text, style='white')
+            log_widget.write(safe_reply)
         except Exception as e:
             logger.exception(f"Error handling message received: {e}")
+            log_widget.write(Text.from_markup(f"[bold red]System: Failed to receive message[/]"))
 
     def on_mount(self) -> None:
         self.set_interval(1.0, self.refresh_page)

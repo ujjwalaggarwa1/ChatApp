@@ -56,7 +56,7 @@ Horizontal {
 }
 
 #sidebar Button:hover {
-    background: #bf616a;
+    background: #417ae6;
 }
 
 /* --- Right Side Workspace Area --- */
@@ -90,7 +90,7 @@ ConversationPane {
 ConversationPane > Vertical {
     width: 100%;
     height: 100%;
-    padding: 1 2;
+    padding: 0;
     border: none;
 }
 
@@ -99,20 +99,36 @@ ConversationPane RichLog {
     width: 100%;
     height: 1fr;
     background: #070814;
-    border: tall #282841;
+    border: tall #265672; 
     margin-bottom: 1;
+    padding: 0 2 ;
 }
 
 /* Message text inputs */
 ConversationPane Input {
+    /* dock: bottom; */
     width: 100%;
     height: 3;
+    min-height: 3;
     background: #1b1c2d;
-    border: tall #444444;
+    border: tall #282841;
+    padding: 0 2;
+    margin-bottom: 1;
 }
 
 ConversationPane Input:focus {
-    border: tall #bf616a;
+    border: tall #1c8b71;
+}
+
+#chat_header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-style: bold;
+    color: #88c0d0;
+    background: #1b1c2d;
+    padding: 1;
+    margin-bottom: 1;
 }
 
 /* --- Notification System --- */
