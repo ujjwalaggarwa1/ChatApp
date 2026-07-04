@@ -143,11 +143,9 @@ class ChatScreen(Screen[None]): #type:ignore
     background_tasks = set()
     
     def compose(self) -> ComposeResult:
-        username = Text(self.app.networkEngine.name, style='bold greenS')
+        username = self.app.networkEngine.name
         self.title = username
-        head = self.query_one(Header(show_clock=True, time_format="%I:%M:%S%p", icon="Chat"))
-        head.title = username
-        yield head
+        yield Header(show_clock=True, time_format="%I:%M:%S%p", icon="Chat")
 
         with Horizontal():
             
